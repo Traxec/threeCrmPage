@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/app.css">
+<link href="images/logo.ico" rel="shortcut icon" type="image/x-icon"/>
+  </head>
+  <body>
+      <div class="top">
+        <div class="top-left">
+          <img src="./images/logo.png" alt="众盟汇">
+        </div>
+        <div class="top-right">
+          <span>返回首页</span>
+        </div>
+        <div class="clear"> </div>
+      </div>
+      <div class="container">
+        <div class="content">
+          <div class="content-left">
+            <div class="title">
+              <span class="title-left">用户登录</span>
+              <span class="title-right"><a href="./zhuce.html">免费注册</a></span>
+              <div class="clear"> </div>
+            </div>
+            <form class="" action="http://localhost/1.php" method="post">
+              <div class="item form-group">
+                <input type="phone" title="请输入用户名" test="登录名" required="required" class="form-control form-controlc" placeholder="手机号/邮箱/ID">
+              </div>
+              <div class="item form-group">
+                <input type="text" title="请输入密码" required="required" class="form-control form-controlc" name="" placeholder="输入您的密码">
+              </div>
+              <div class="item form-group">
+                <input type="text" title="请输入图形验证码" required="required" class="form-control form-controls" name="" placeholder="图形验证码">
+                <input type="button" class="btn btn-info btns" name="" value="图形验证码">
+                <div class="clear"> </div>
+              </div>
+              <div class="form-group">
+                <input type="submit" class="btn btn-info btnl" name="" value="登录">
+              </div>
+            </form>
+            <div class="forget">
+               <a href="./wangjimima.html">忘记密码</a>
+            </div>
+          </div>
+          <div class="content-right">
+            <img src="./images/img01.png" alt="￥￥￥">
+          </div>
+          <div class="clear"> </div>
+
+        </div>
+      </div>
+      <div class="footer">
+        <span>版权所有版权所有版权所有版权所有版权所有版权所有版权所有版权所有</span>
+      </div>
+
+
+    <script type="text/javascript" src="./js/jquery.min.js"> </script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <!-- validator -->
+    <script src="./js/validator/validator.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="./build/js/custom.min.js"></script>
+    <script type="text/javascript">
+    $('form').submit(function(e) {
+        e.preventDefault();
+        var submit = true;
+
+        // evaluate the form using generic validaing
+        if (!validator.checkAll($(this))) {
+          submit = false;
+        }
+
+        if (submit){
+          // this.submit();
+                $(':submit').click(function(){
+        $.ajax({
+          url:'https://www.baidu.com',
+          type:'post',
+          success:function(){
+            alert(1)
+          },
+          error:function(){
+            alert(2)
+          }
+        })
+      })
+
+        }
+
+        return false;
+    });
+   
+    </script>
+  </body>
+</html>

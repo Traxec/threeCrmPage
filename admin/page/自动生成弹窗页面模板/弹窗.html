@@ -1,0 +1,138 @@
+<!-- 审核-Modal -->
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <form class="form-horizontal">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">xx审核</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group form_check">
+          <label for="inputEmail3" class="col-sm-2 control-label">字段1</label>
+          <div class="col-sm-4"  >
+            <span>值1</span>
+          </div>
+          <label for="inputEmail3" class="col-sm-2 control-label">字段2</label>
+          <div class="col-sm-4">
+            <span>值2</span>
+          </div>
+          <label for="inputEmail3" class="col-sm-2 control-label">字段3</label>
+          <div class="col-sm-4">
+            <span>值3</span>
+          </div>
+          <label for="inputEmail3" class="col-sm-2 control-label">字段4</label>
+          <div class="col-sm-4">
+            <span>值4</span>
+          </div>
+        </div>
+        <hr>
+        <div class="form-group">
+          <label class="control-label col-md-2 col-sm-2 col-xs-12">审核</label>
+          <div class="col-md-9 col-sm-9 col-xs-12">
+            <select id="xx_select" class="form-control">
+              <option value="1">通过</option>
+              <option value="2">不通过</option>
+            </select>
+          </div>
+        </div>
+        <div id="xx_no_reason" style="display:none" class="form-group item">
+          <label for="inputEmail3" class="col-sm-2 control-label">原因</label>
+          <div class="col-sm-9">
+            <textarea id="message" class="form-control" name="message" data-parsley-trigger="keyup" data-parsley-minlength="20" data-parsley-maxlength="100" data-parsley-minlength-message="Come on! You need to enter at least a 20 caracters long comment.."
+            data-parsley-validation-threshold="10"></textarea>
+          </div>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" aria-hidden="true">关闭</button>
+        <button type="button" data-toggle="modal" data-target="#xx-check-submit" class="btn btn-primary">保存</button>
+        <div class="modal fade" style="margin-top:130px;" id="xx-check-submit" tabindex="1" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content really">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="modal-title" id="myModalLabel" style="text-align: center">确认操作？</h3>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="submit" class="btn btn-primary">确认</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- 修改 -->
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <form class="form-horizontal">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">xx修改</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group item">
+          <label for="inputEmail3" class="col-sm-2 control-label">字段1</label>
+          <div class="col-sm-6">
+            <input type="text" name="xx" value="" data-validate-length-range="1,10" required="required" title="请输入xx" class="form-control">
+          </div>
+        </div>
+        <div class="form-group item">
+          <label for="inputEmail3" class="col-sm-2 control-label">字段2</label>
+          <div class="col-sm-6">
+            <input type="text" name="xx" value="" data-validate-length-range="1,10" required="required" title="请输入xx" class="form-control">
+          </div>
+        </div>
+        <div class="form-group item">
+          <label for="inputEmail3" class="col-sm-2 control-label">字段3</label>
+          <div class="col-sm-6">
+            <input type="text" name="xx" value="" data-validate-length-range="1,10" required="required" title="请输入xx" class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        <button type="submit" class="btn btn-primary">保存</button>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- 详情-Modal -->
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <form class="form-horizontal">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">xx详情</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group form_check">
+          <label for="inputEmail3" class="col-sm-2 control-label">字段1</label>
+          <div class="col-sm-4">
+            <span>值1</span>
+          </div>
+          <label for="inputEmail3" class="col-sm-2 control-label">字段2</label>
+          <div class="col-sm-4">
+            <span>值2</span>
+          </div>
+          <label for="inputEmail3" class="col-sm-2 control-label">字段3</label>
+          <div class="col-sm-4">
+            <span>值3</span>
+          </div>
+          <label for="inputEmail3" class="col-sm-2 control-label">字段4</label>
+          <div class="col-sm-4">
+            <span>值4</span>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" aria-hidden="true">关闭</button>
+      </form>
+    </div>
+  </div>
+</div>

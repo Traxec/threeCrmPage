@@ -1,0 +1,95 @@
+ <!-- 审核 -->
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <form class="form-horizontal">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">出金审核</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group item">
+          <label for="inputEmail3" class="col-sm-2 control-label">出金时间</label>
+          <div class="col-sm-6">
+            <input type="text" name="xx" class="form-control">
+          </div>
+        </div>
+        <div class="form-group item">
+          <label for="inputEmail3" class="col-sm-2 control-label">交易帐号</label>
+          <div class="col-sm-6">
+            <input type="text" name="xx" class="form-control">
+          </div>
+        </div>
+        <div class="form-group item">
+          <label for="inputEmail3" class="col-sm-2 control-label">会员姓名</label>
+          <div class="col-sm-6">
+            <input type="text" name="xx" class="form-control">
+          </div>
+        </div>
+        <div class="form-group item">
+          <label for="inputEmail3" class="col-sm-2 control-label">会员帐号</label>
+          <div class="col-sm-6">
+            <input type="text" name="xx" class="form-control">
+          </div>
+        </div>
+        <div class="form-group item">
+          <label for="inputEmail3" class="col-sm-2 control-label">出金货币</label>
+          <div class="col-sm-6">
+            <input type="text" name="xx" class="form-control">
+          </div>
+        </div>
+        <div class="form-group item">
+          <label for="inputEmail3" class="col-sm-2 control-label">出金金额</label>
+          <div class="col-sm-6">
+            <input type="text" name="xx" class="form-control">
+          </div>
+        </div>
+        <div class="form-group item">
+          <label for="inputEmail3" class="col-sm-2 control-label">人民币金额</label>
+          <div class="col-sm-6">
+            <input type="text" name="xx" class="form-control">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-md-2 col-sm-2 col-xs-12">审核</label>
+          <div class="col-sm-6">
+            <select id="desh_select" class="form-control">
+              <option value="1">通过</option>
+              <option value="2">未通过</option>
+            </select>
+          </div>
+        </div>
+        <div id="desh_no_reason" style="display:none" class="form-group item">
+          <label for="inputEmail3" class="col-sm-2 control-label">未通过原因</label>
+          <div class="col-sm-6">
+            <textarea id="message" class="form-control" name="message" data-parsley-trigger="keyup" data-parsley-minlength="20" data-parsley-maxlength="100" data-parsley-minlength-message="Come on! You need to enter at least a 20 caracters long comment.."
+            data-parsley-validation-threshold="10"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        <button type="submit" class="btn btn-primary">保存</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+  <!-- jQuery -->
+  <script src="../vendors/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- Custom Theme Scripts -->
+  <script src="../build/js/custom.min.js"></script>
+  <!-- validator -->
+  <script src="../vendors/validator/validator.js"></script>
+  <script>
+  $("#desh_select").change(function(){
+    var wtg = $("#desh_select").find("option:selected").val();
+    if (wtg==2){
+      $('#desh_no_reason').css('display','block')
+    }else{
+      $('#desh_no_reason').css('display','none')
+    }
+  });
+
+  </script>

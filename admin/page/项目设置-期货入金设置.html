@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>三代CRM | 项目设置(入金设置)</title>
+
+  <!-- Bootstrap -->
+  <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../src/bootcss/css/app.css" rel="stylesheet">
+
+  <!-- Custom Theme Style -->
+  <link href="../build/css/custom.min.css" rel="stylesheet">
+  <link href="../src/bootcss/css/app.css" rel="stylesheet">
+</head>
+
+<body class="nav-md">
+  <div class="container body">
+    <div class="main_container">
+      <div class="col-md-3 left_col">
+        <div class="left_col scroll-view">
+
+          <div class="clearfix"></div>
+
+          <br />
+
+        </div>
+      </div>
+
+      <div class="right_col" role="main">
+        <div class="col-md-12">
+          <div class="page-title">
+            <div class="title_left">
+              <h3>期货管理</h3>
+            </div>
+            <div class="clearfix"></div>
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>入金设置<small>期货入金设置</small></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#">Settings 1</a>
+                          </li>
+                          <li><a href="#">Settings 2</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><a class="close-link"><i class="fa fa-close"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <a href="javascript:void(0)" style="margin:top:0px;margin-left:90%;font-weight:bold" class="link-add-ingold"><i class="fa fa-level-up "></i> 新增</a>
+                  <div class="col-md-8">
+                    <h2 style="font-weight:bold">入金货币管理</h2>
+                    <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+                      <div>
+                        <h5 style="float:left;margin-left:80px">货币管理</h5>
+                        <h5 style="float:left;margin-left:100px">汇率设置</h5>
+                        <h5 style="float:left;margin-left:175px">功能</h5>
+                        <div class="clearfix"></div>
+                      </div>
+                      <br />
+                      <div class="form-group item" style="margin-left:-170px">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">美元<span class="required">*</span> </label>
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                          <input type="number" title="请输入美元汇率" required="required" name="" class="form-control col-md-7 col-xs-12">
+                        </div>
+                        <a href="#" data-toggle="modal" data-target="#del1" class="wh-outgold " style="line-height:34px;margin-left:30px;"><i class="fa fa-level-up"></i>删除</a>&nbsp;
+                      </div>
+                      <div class="form-group item" style="margin-left:-170px">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">港元<span class="required">*</span> </label>
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                          <input type="number" title="请输入港元汇率" name="" required="required" class="form-control col-md-7 col-xs-12">
+                        </div>
+                        <a href="#" data-toggle="modal" data-target="#del2" class="wh-outgold " style="line-height:34px;margin-left:30px;"><i class="fa fa-level-up"></i>删除</a>&nbsp;
+                      </div>
+                      <div class="form-group item" style="margin-left:-170px">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">欧元<span class="required">*</span> </label>
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                          <input type="number" title="请输入欧元汇率" name="" required="required" class="form-control col-md-7 col-xs-12">
+                        </div>
+                        <a href="#" data-toggle="modal" data-target="#del3" class="wh-outgold " style="line-height:34px;margin-left:30px;"><i class="fa fa-level-up"></i>删除</a>&nbsp;
+                      </div>
+
+                      <div class="ln_solid"></div>
+                      <!-- 注意，只能输入整数 -->
+                      <div>
+                        <h5 style="float:left;margin-left:70px">入金金额管理</h5>
+                        <!-- <h5 style="float:left;margin-left:50px;color:red">注：只能输入整数</h5> -->
+                        <h5 style="float:left;margin-left:305px">入金手续费费率管理</h5>
+                        <div class="clearfix"></div>
+                      </div>
+                      <br />
+                      <div class="form-group item" style="margin-left:-170px">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">最大<span class="required">*</span> </label>
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                          <input type="money" title="请输入最大限额" required="required" name="" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+                      <div class="form-group item" style="margin-left:-170px;margin-top:-40px;">
+                        <label class="control-label col-md-1 col-sm-1" style="margin-left:0px;line-height:10px" for="first-name">栏目管理<span class="required">*</span> </label>
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                          <input type="radio" style="margin-left:30px"><label for="">显示</label>
+                          <input type="radio" style="margin-left:30px"><label for="">不显示</label>
+                        </div>
+                      </div>
+                      <div class="form-group item" style="margin-left:-170px">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">最小<span class="required">*</span> </label>
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                          <input type="money" title="请输入最小限额" name="" required="required" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+                      <div class="form-group item" style="margin-top:-40px;width:1100px">
+                        <label class="control-label col-md-1 col-sm-1" style="margin-left:30px;line-height:10px;text-align:left" for="first-name">费率<span class="required">*</span> </label>
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                          <input type="number" title="请输入费率" required="required" class="form-control">
+                        </div>
+                      </div>
+
+                      <div class="ln_solid"></div>
+                      <div class="form-group">
+                        <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                          <button type="submit" class="btn btn-success">保存</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="col-md-4 add-ingold" style="display:none">
+                    <br />
+                    <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+                      <h4 style="margin-left:-100px;font-weight:bold">新增入金货币</h4>
+                      <div class="form-group item" style="margin-left:-170px">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">货币名称<span class="required">*</span> </label>
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                          <input type="text" title="请输入货币名称" required="required" name="" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+                      <div class="ln_solid"></div>
+                      <div class="form-group">
+                        <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                          <button class="btn btn-primary" type="reset">取消</button>
+                          <button type="submit" class="btn btn-success">保存</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div id="del1" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">操作提示</h4>
+            </div>
+            <div class="modal-body">
+              <p>确认删除?</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">确认</button>
+              <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div id="del2" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">操作提示</h4>
+            </div>
+            <div class="modal-body">
+              <p>确认删除?</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">确认</button>
+              <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div id="del3" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">操作提示</h4>
+            </div>
+            <div class="modal-body">
+              <p>确认删除?</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">确认</button>
+              <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- jQuery -->
+  <script src="../vendors/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- bootstrap-daterangepicker -->
+  <script src="../vendors/moment/min/moment.min.js"></script>
+  <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+  <!-- validator -->
+  <script src="../vendors/validator/validator.js"></script>
+  <!-- Custom Theme Scripts -->
+  <script src="../build/js/custom.min.js"></script>
+  <script type="text/javascript">
+  $(".link-add-ingold").click(function(){
+    var wtg = $(".add-ingold").css("display");
+    if (wtg=='none'){
+      $('.add-ingold').css('display','block')
+    }else{
+      $('.add-ingold').css('display','none')
+    }
+  });
+  $(":reset").click(function(){
+      $('.add-ingold').css('display','none')
+  });
+  </script>
+
+</body>
+</html>

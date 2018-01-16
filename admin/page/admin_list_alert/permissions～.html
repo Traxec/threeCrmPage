@@ -1,0 +1,93 @@
+ <!-- 修改 -->
+ <div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <form class="form-horizontal">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">修改管理员资料</h4>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li><input type="checkbox"><a class="level_one" href="javascript:void(0)">一级栏目01 <span>+</span></a>
+            <ul>
+              <li><input type="checkbox">二级栏目01</li>
+              <li><input type="checkbox">二级栏目02</li>
+              <li><input type="checkbox">二级栏目03</li>
+              <li><input type="checkbox">二级栏目04</li>
+              <li><input type="checkbox">二级栏目05</li>
+            </ul>
+          </li>
+          <li><input type="checkbox"><a class="level_one" href="javascript:void(0)">一级栏目02 <span>+</span></a>
+            <ul>
+              <li><input type="checkbox">二级栏目01</li>
+              <li><input type="checkbox">二级栏目02</li>
+              <li><input type="checkbox">二级栏目03</li>
+              <li><input type="checkbox">二级栏目04</li>
+              <li><input type="checkbox">二级栏目05</li>
+            </ul>
+          </li>
+          <li><input type="checkbox"><a class="level_one" href="javascript:void(0)">一级栏目03 <span>+</span></a>
+            <ul>
+              <li><input type="checkbox">二级栏目01</li>
+              <li><input type="checkbox">二级栏目02</li>
+              <li><input type="checkbox">二级栏目03</li>
+              <li><input type="checkbox">二级栏目04</li>
+              <li><input type="checkbox">二级栏目05</li>
+            </ul>
+          </li>
+          <li><input type="checkbox"><a class="level_one" href="javascript:void(0)">一级栏目04 <span>+</span></a>
+            <ul>
+              <li><input type="checkbox">二级栏目01</li>
+              <li><input type="checkbox">二级栏目02</li>
+              <li><input type="checkbox">二级栏目03</li>
+              <li><input type="checkbox">二级栏目04</li>
+              <li><input type="checkbox">二级栏目05</li>
+            </ul>
+          </li>
+          <li><input type="checkbox"><a class="level_one" href="javascript:void(0)">一级栏目05 <span>+</span></a>
+            <ul>
+              <li><input type="checkbox">二级栏目01</li>
+              <li><input type="checkbox">二级栏目02</li>
+              <li><input type="checkbox">二级栏目03</li>
+              <li><input type="checkbox">二级栏目04</li>
+              <li><input type="checkbox">二级栏目05</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        <button type="submit" class="btn btn-primary">保存</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+  <!-- jQuery -->
+  <script src="../vendors/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript">
+  $('.level_one').siblings('ul').css('display','none')
+  //
+  $('.level_one').click(function(){
+    if($(this).hasClass('active')){
+      $(this).siblings('ul').css('display','none')
+      $(this).find('span').text('+')
+      $(this).removeClass('active')
+    }else{
+      $(this).siblings('ul').css('display','block')
+      $(this).find('span').text('-')
+      $(this).addClass('active')
+    }
+  })
+  $('.level_one').siblings('input').click(function(){
+    if($(this).is(':checked')){
+      $(this).parent().find('input').prop('checked',true)
+    }else{
+      $(this).parent().find('input').prop('checked',false)
+    }
+  })
+
+  </script> 
