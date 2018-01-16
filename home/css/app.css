@@ -1549,7 +1549,7 @@ center{
 
 .in-rightter>div:first-child{
   /*border:1px solid red;*/
-  height: 310px;
+  height: 250px;
   background: white;
   margin-bottom: 10px;
 }
@@ -1574,7 +1574,7 @@ center{
 }
 .in-right-top-twoo{
   border-right: 1px solid #d9d9d9;
-  height: 230px;
+  height: 170px;
   width: 330px;
   float: left;
 }
@@ -1610,7 +1610,7 @@ center{
   padding-top: 4px;
   margin-right: 40px;
   margin-left: 60px;
-  margin-top: 70px !important;
+  margin-top: 30px !important;
   color: white;
   text-align: center;
 }
@@ -1622,7 +1622,7 @@ center{
   float: left;
   width: 85px;
   padding-top: 4px;
-  margin-top: 70px !important;
+  margin-top: 30px !important;
   background: white;
   text-align: center;
   color: #f2343b;
@@ -1648,7 +1648,8 @@ center{
   font-weight: bold;
 }
 .innr-rightr>div:nth-child(2){
-  margin-left: 30px;
+  text-align: center;
+  margin-left: -30px;
 }
 .innr-rightr>div:nth-child(4){
   margin-left: 30px;
@@ -2605,6 +2606,6 @@ center{
   border-right:0px;
 }
 .qh .innr-right-two a:first-child{
-  margin-left: 130px;
+  margin-left: 140px;
 }
 /* 期货结束 */
