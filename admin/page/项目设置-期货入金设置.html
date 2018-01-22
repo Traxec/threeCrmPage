@@ -65,6 +65,7 @@
                   <a href="javascript:void(0)" style="margin:top:0px;margin-left:90%;font-weight:bold" class="link-add-ingold"><i class="fa fa-level-up "></i> 新增</a>
                   <div class="col-md-8">
                     <h2 style="font-weight:bold">入金货币管理</h2>
+                    <button style="font-size:18px;margin:top:0px;margin-left:70%;font-weight:bold;border:0px;background: #fff;"><i class="fa fa-level-up "></i> 一键赋值</button>
                     <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
                       <div>
                         <h5 style="float:left;margin-left:80px">货币管理</h5>
@@ -113,8 +114,8 @@
                       <div class="form-group item" style="margin-left:-170px;margin-top:-40px;">
                         <label class="control-label col-md-1 col-sm-1" style="margin-left:0px;line-height:10px" for="first-name">栏目管理<span class="required">*</span> </label>
                         <div class="col-md-3 col-sm-3 col-xs-12">
-                          <input type="radio" style="margin-left:30px"><label for="">显示</label>
-                          <input type="radio" style="margin-left:30px"><label for="">不显示</label>
+                          <input type="radio" style="margin-left:30px" name="show" value="1"><label for="">显示</label>
+                          <input type="radio" style="margin-left:30px" name="show" value="0"><label for="">不显示</label>
                         </div>
                       </div>
                       <div class="form-group item" style="margin-left:-170px">
@@ -123,7 +124,7 @@
                           <input type="money" title="请输入最小限额" name="" required="required" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
-                      <div class="form-group item" style="margin-top:-40px;width:1100px">
+                      <div class="form-group item" style="margin-top:-40px;width:1100px;display:none" id="show">
                         <label class="control-label col-md-1 col-sm-1" style="margin-left:30px;line-height:10px;text-align:left" for="first-name">费率<span class="required">*</span> </label>
                         <div class="col-md-3 col-sm-3 col-xs-12">
                           <input type="number" title="请输入费率" required="required" class="form-control">
@@ -146,6 +147,12 @@
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">货币名称<span class="required">*</span> </label>
                         <div class="col-md-3 col-sm-3 col-xs-12">
                           <input type="text" title="请输入货币名称" required="required" name="" class="form-control col-md-7 col-xs-12">
+                        </div>
+                      </div>
+                      <div class="form-group item" style="margin-left:-170px">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">货币code<span class="required">*</span> </label>
+                        <div class="col-md-3 col-sm-3 col-xs-12">
+                          <input type="text" title="请输入货币code" required="required" name="" class="form-control col-md-7 col-xs-12">
                         </div>
                       </div>
                       <div class="ln_solid"></div>
@@ -232,6 +239,14 @@
   <!-- Custom Theme Scripts -->
   <script src="../build/js/custom.min.js"></script>
   <script type="text/javascript">
+    $('input:radio[name="show"]').change(function(){
+      var status = $('input:radio[name="show"]:checked').val();
+      if(status == 0){
+        $('#show').css('display','none');
+      }else{
+        $('#show').css('display','block');
+      } 
+    })
   $(".link-add-ingold").click(function(){
     var wtg = $(".add-ingold").css("display");
     if (wtg=='none'){
