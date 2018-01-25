@@ -1,0 +1,112 @@
+@charset "UTF-8";
+/* 变量开始 */
+/* 变量结束 */
+.jypm {
+  padding-top: 40px;
+  height: 1010px; }
+  .jypm .in-jypm {
+    width: 100%; }
+    .jypm .in-jypm .for {
+      width: 100%;
+      height: 850px; }
+      .jypm .in-jypm .for #myTab {
+        margin-left: 0px; }
+        .jypm .in-jypm .for #myTab li {
+          width: 70px;
+          text-align: center; }
+          .jypm .in-jypm .for #myTab li a {
+            color: #4c4c4c;
+            outline: none; }
+      .jypm .in-jypm .for .tab-content {
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100%; }
+        .jypm .in-jypm .for .tab-content table {
+          width: 100%; }
+        .jypm .in-jypm .for .tab-content tr:nth-child(odd) {
+          background: #f2f2f2;
+          border-top: 1px solid #ededed;
+          border-bottom: 1px solid #ededed; }
+        .jypm .in-jypm .for .tab-content tr:first-child {
+          background: #fef9f0;
+          border-top: 1px solid #d9d9d9;
+          border-bottom: 1px solid #d9d9d9;
+          box-shadow: 0px 2px 6px #d9d9d9;
+          margin-bottom: 2px; }
+        .jypm .in-jypm .for .tab-content th {
+          text-align: center;
+          font-size: 14px; }
+        .jypm .in-jypm .for .tab-content td {
+          text-align: center;
+          color: #4c4c4c;
+          font-size: 12px; }
+          .jypm .in-jypm .for .tab-content td button {
+            width: 60px;
+            height: 26px;
+            border: 1px solid #ff0000;
+            border-radius: 6px;
+            color: #ff0000;
+            background: #fff; }
+            .jypm .in-jypm .for .tab-content td button:hover {
+              width: 60px;
+              height: 26px;
+              border-radius: 6px;
+              color: #fff;
+              background: #ff0000; }
+          .jypm .in-jypm .for .tab-content td:nth-child(2) {
+            text-align: left; }
+            .jypm .in-jypm .for .tab-content td:nth-child(2) a {
+              color: #4c4c4c; }
+          .jypm .in-jypm .for .tab-content td:first-child img {
+            position: relative;
+            top: -20px;
+            left: -3px; }
+          .jypm .in-jypm .for .tab-content td:nth-child(2) img {
+            margin-left: 10px;
+            margin-right: 10px; }
+
+li.active a {
+  color: #ff0000 !important; }
+
+.font-red {
+  color: #ff0000; }
+
+.jypm-top {
+  float: right;
+  margin-top: 45px; }
+  .jypm-top > ul > li {
+    float: left;
+    text-align: center; }
+    .jypm-top > ul > li:nth-child(-n+4) {
+      width: 127px; }
+    .jypm-top > ul > li a {
+      color: #4c4c4c;
+      text-decoration: none;
+      outline: none; }
+    .jypm-top > ul > li a:hover {
+      color: #ff0000;
+      cursor: pointer; }
+    .jypm-top > ul > li a:active {
+      color: #ff0000;
+      cursor: pointer; }
+    .jypm-top > ul > li > img {
+      margin-left: 10px; }
+    .jypm-top > ul > li:nth-last-child(4), .jypm-top > ul > li:nth-last-child(3) {
+      margin-right: 20px; }
+    .jypm-top > ul > li > ul {
+      padding: 0px;
+      margin-top: 60px;
+      background: #fff;
+      display: none; }
+      .jypm-top > ul > li > ul > li {
+        text-align: left;
+        width: 127px;
+        height: 40px;
+        line-height: 40px;
+        padding-left: 25px; }
+        .jypm-top > ul > li > ul > li a {
+          color: #4c4c4c; }
+        .jypm-top > ul > li > ul > li:hover {
+          color: #ff0000; }
+
+/*# sourceMappingURL=sass.css.map */

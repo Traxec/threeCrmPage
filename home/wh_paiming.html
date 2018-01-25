@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/sass.css">
+    <link href="images/logo.ico" rel="shortcut icon" type="image/x-icon"/>
+    <link href="./css/bootstrap-fileinput.css" rel="stylesheet">
+    <link rel="stylesheet" href="js/jDialog/jDialog.css" type="text/css">
+    <link href="./css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="all" href="./css/daterangepicker-bs3.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./css/demo.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
+
+  </head>
+  <body>
+  	<div class="toper">
+  		<div class="toper-left">
+  			<span>客服电话：400-600-1231（9：00-18:00）</span>
+  		</div>
+  		<div class="toper-right">
+  			<span class="toper-right-one">APP下载</span>
+  			<span class="toper-right-two">欢迎您，</span>
+  			<span class="toper-right-three">600001</span>
+  			<span class="toper-right-four">|</span>
+  			<span class="toper-right-five">消息</span>
+  			<span class="toper-right-six">0</span>
+  			<span class="toper-right-four">|</span>
+  			<span>退出</span>
+  			<span class="toper-right-four">|</span>
+  			<span>在线客服</span>
+  			<div class="clear"></div>
+  		</div>
+  	</div>
+    <div class="top">
+	    <div class="top-left">
+	      <img src="./images/logo.png" alt="众盟汇" />
+	    </div>
+      <div class="jypm-top">
+        <ul>
+          <li class="hover"><a href="javascript:void(0)">高手排名</a><img src="./images/arrow-up.png" alt="">
+            <ul>
+              <li><a href="#">外汇排名</a></li>
+              <li><a href="#">期货排名</a></li>
+            </ul>
+          </li>
+          <li class="hover"><a href="javascript:void(0)">跟单排名</a><img src="./images/arrow-up.png" alt="">
+            <ul>
+              <li><a href="#">外汇排名</a></li>
+              <li><a href="#">期货排名</a></li>
+            </ul>
+          </li>
+          <li class="hover"><a href="javascript:void(0)">高手招募</a><img src="./images/arrow-up.png" alt="">
+            <ul>
+              <li><a href="#">入选标准</a></li>
+              <li><a href="#">加入我们</a></li>
+            </ul>
+          </li>
+          <li class="hover"><a href="javascript:void(0)">我要跟单</a><img src="./images/arrow-up.png" alt="">
+            <ul>
+              <li><a href="#">跟单说明</a></li>
+            </ul>
+          </li>
+          <li><a href="#">常见问题</a></li>
+          <li>|</li>
+          <li><a href="">会员中心</a></li>
+          <div class="clear"></div>
+        </ul>
+      </div>
+
+    </div>
+    <div class="inc jypm">
+    	<div class="in-jypm">
+        	<div class="for">
+	          <div class="">外汇排名 <span style="font-size:14px;position:relative;left:918px;color:#4c4c4c">当前位置：<span style="color:#ff0000">首页>><a href="#" style="color:#ff0000">外汇排名</a></span></span></div>
+	          <div>
+	          	<ul id="myTab" class="nav nav-tabs" style="margin-top: 30px;">
+	          	   <li class="active"><a href="#day" data-toggle="tab">日榜</a></li>
+	          	   <li><a href="#week" data-toggle="tab">周榜</a></li>
+	          	   <li><a href="#month" data-toggle="tab">月榜</a></li>
+	          	   <li><a href="#season" data-toggle="tab">季榜</a></li>
+	          	   <li><a href="#year" data-toggle="tab">年榜</a></li>
+
+	          	</ul>
+	          	<div id="myTabContent" class="tab-content">
+	          	  <div class="tab-pane fade in active" id="day">
+	          	      <table border="0px;color:black;">
+	          	      	<tr>
+	          	      		<th style="width:60;height: 40px;"><span style="margin-left: 10px;">排名<span></th>
+	          	      		<th style="width:201px;height: 40px;">昵称</th>
+	          	      		<th style="width:100px;height: 40px;">收益率</th>
+	          	      		<th style="width:100px;height: 40px;">收益额</th>
+	          	      		<th style="width:100px;height: 40px;">盈亏点数</th>
+	          	      		<th style="width:100px;height: 40px;">最大回撤</th>
+	          	      		<th style="width:100px;height: 40px;">当前权益</th>
+	          	      		<th style="width:100px;height: 40px;">交易周期</th>
+	          	      		<th style="width:100px;height: 40px;">跟随人数</th>
+	          	      		<th style="width:100px;height: 40px;">交易笔数</th>
+	          	      		<th style="width:100px;height: 40px;">功能</th>
+	          	      	</tr>
+	          	      	<tr>
+	          	      		<td style="height: 60px;padding-top:20px;"><img src="./images/huangguan.png" alt="" /><span style="margin:0px 0px 0px -25px">1</span></td>
+                          <!-- 昵称是链接，点击进入交易详情页面 -->
+	          	      		<td style="height: 60px;"><img src="./images/paiming-touxiang.png" /><a href="#">阿呆</a></td>
+	          	      		<td style="height: 60px;" class="font-red">9.23%</td>
+	          	      		<td style="height: 60px;">￥5123,456,45</td>
+	          	      		<td style="height: 60px;">100</td>
+	          	      		<td style="height: 60px;">4.61%</td>
+	          	      		<td style="height: 60px;">123.00</td>
+	          	      		<td style="height: 60px;">12</td>
+	          	      		<td style="height: 60px;">20</td>
+	          	      		<td style="height: 60px;">123</td>
+	          	      		<td style="height: 60px;"><button>跟随</button></td>
+	          	      	</tr>
+	          	      	<tr>
+	          	      		<td style="height: 60px;padding-top:20px;"><img src="./images/huangguan.png" alt="" /><span style="margin:0px 0px 0px -25px">2</span></td>
+	          	      		<td style="height: 60px;"><img src="./images/paiming-touxiang.png" /><a href="#">阿呆</a></td>
+	          	      		<td style="height: 60px;" class="font-red">9.23%</td>
+	          	      		<td style="height: 60px;">￥5123,456,45</td>
+	          	      		<td style="height: 60px;">100</td>
+	          	      		<td style="height: 60px;">4.61%</td>
+	          	      		<td style="height: 60px;">123.00</td>
+	          	      		<td style="height: 60px;">12</td>
+	          	      		<td style="height: 60px;">20</td>
+	          	      		<td style="height: 60px;">123</td>
+	          	      		<td style="height: 60px;"><button>跟随</button></td>
+	          	      	</tr>
+	          	      	<tr>
+	          	      		<td style="height: 60px;padding-top:20px;"><img src="./images/huangguan.png" alt="" /><span style="margin:0px 0px 0px -25px">3</span></td>
+	          	      		<td style="height: 60px;"><img src="./images/paiming-touxiang.png" /><a href="#">阿呆</a></td>
+	          	      		<td style="height: 60px;" class="font-red">9.23%</td>
+	          	      		<td style="height: 60px;">￥5123,456,45</td>
+	          	      		<td style="height: 60px;">100</td>
+	          	      		<td style="height: 60px;">4.61%</td>
+	          	      		<td style="height: 60px;">123.00</td>
+	          	      		<td style="height: 60px;">12</td>
+	          	      		<td style="height: 60px;">20</td>
+	          	      		<td style="height: 60px;">123</td>
+	          	      		<td style="height: 60px;"><button>跟随</button></td>
+	          	      	</tr>
+	          	      	<tr>
+	          	      		<td style="height: 60px;"><span style="margin-left: 10px;">4<span></td>
+	          	      		<td style="height: 60px;"><img src="./images/paiming-touxiang.png" /><a href="#">阿呆</a></td>
+	          	      		<td style="height: 60px;" class="font-red">9.23%</td>
+	          	      		<td style="height: 60px;">￥5123,456,45</td>
+	          	      		<td style="height: 60px;">100</td>
+	          	      		<td style="height: 60px;">4.61%</td>
+	          	      		<td style="height: 60px;">123.00</td>
+	          	      		<td style="height: 60px;">12</td>
+	          	      		<td style="height: 60px;">20</td>
+	          	      		<td style="height: 60px;">123</td>
+	          	      		<td style="height: 60px;"><button>跟随</button></td>
+	          	      	</tr>
+	          	      	<tr>
+	          	      		<td style="height: 60px;"><span style="margin-left: 10px;">5<span></td>
+	          	      		<td style="height: 60px;"><img src="./images/paiming-touxiang.png" /><a href="#">阿呆</a></td>
+	          	      		<td style="height: 60px;" class="font-red">9.23%</td>
+	          	      		<td style="height: 60px;">￥5123,456,45</td>
+	          	      		<td style="height: 60px;">100</td>
+	          	      		<td style="height: 60px;">4.61%</td>
+	          	      		<td style="height: 60px;">123.00</td>
+	          	      		<td style="height: 60px;">12</td>
+	          	      		<td style="height: 60px;">20</td>
+	          	      		<td style="height: 60px;">123</td>
+	          	      		<td style="height: 60px;"><button>跟随</button></td>
+	          	      	</tr>
+	          	      	<tr>
+	          	      		<td style="height: 60px;"><span style="margin-left: 10px;">6<span></td>
+	          	      		<td style="height: 60px;"><img src="./images/paiming-touxiang.png" /><a href="#">阿呆</a></td>
+	          	      		<td style="height: 60px;" class="font-red">9.23%</td>
+	          	      		<td style="height: 60px;">￥5123,456,45</td>
+	          	      		<td style="height: 60px;">100</td>
+	          	      		<td style="height: 60px;">4.61%</td>
+	          	      		<td style="height: 60px;">123.00</td>
+	          	      		<td style="height: 60px;">12</td>
+	          	      		<td style="height: 60px;">20</td>
+	          	      		<td style="height: 60px;">123</td>
+	          	      		<td style="height: 60px;"><button>跟随</button></td>
+	          	      	</tr>
+	          	      	<tr>
+	          	      		<td style="height: 60px;"><span style="margin-left: 10px;">7<span></td>
+	          	      		<td style="height: 60px;"><img src="./images/paiming-touxiang.png" /><a href="#">阿呆</a></td>
+	          	      		<td style="height: 60px;" class="font-red">9.23%</td>
+	          	      		<td style="height: 60px;">￥5123,456,45</td>
+	          	      		<td style="height: 60px;">100</td>
+	          	      		<td style="height: 60px;">4.61%</td>
+	          	      		<td style="height: 60px;">123.00</td>
+	          	      		<td style="height: 60px;">12</td>
+	          	      		<td style="height: 60px;">20</td>
+	          	      		<td style="height: 60px;">123</td>
+	          	      		<td style="height: 60px;"><button>跟随</button></td>
+	          	      	</tr>
+	          	      	<tr>
+	          	      		<td style="height: 60px;"><span style="margin-left: 10px;">8<span></td>
+	          	      		<td style="height: 60px;"><img src="./images/paiming-touxiang.png" /><a href="#">阿呆</a></td>
+	          	      		<td style="height: 60px;" class="font-red">9.23%</td>
+	          	      		<td style="height: 60px;">￥5123,456,45</td>
+	          	      		<td style="height: 60px;">100</td>
+	          	      		<td style="height: 60px;">4.61%</td>
+	          	      		<td style="height: 60px;">123.00</td>
+	          	      		<td style="height: 60px;">12</td>
+	          	      		<td style="height: 60px;">20</td>
+	          	      		<td style="height: 60px;">123</td>
+	          	      		<td style="height: 60px;"><button>跟随</button></td>
+	          	      	</tr>
+	          	      	<tr>
+	          	      		<td style="height: 60px;"><span style="margin-left: 10px;">9<span></td>
+	          	      		<td style="height: 60px;"><img src="./images/paiming-touxiang.png" /><a href="#">阿呆</a></td>
+	          	      		<td style="height: 60px;" class="font-red">9.23%</td>
+	          	      		<td style="height: 60px;">￥5123,456,45</td>
+	          	      		<td style="height: 60px;">100</td>
+	          	      		<td style="height: 60px;">4.61%</td>
+	          	      		<td style="height: 60px;">123.00</td>
+	          	      		<td style="height: 60px;">12</td>
+	          	      		<td style="height: 60px;">20</td>
+	          	      		<td style="height: 60px;">123</td>
+	          	      		<td style="height: 60px;"><button>跟随</button></td>
+	          	      	</tr>
+	          	      	<tr>
+	          	      		<td style="height: 60px;"><span style="margin-left: 10px;">10<span></td>
+	          	      		<td style="height: 60px;"><img src="./images/paiming-touxiang.png" /><a href="#">阿呆</a></td>
+	          	      		<td style="height: 60px;" class="font-red">9.23%</td>
+	          	      		<td style="height: 60px;">￥5123,456,45</td>
+	          	      		<td style="height: 60px;">100</td>
+	          	      		<td style="height: 60px;">4.61%</td>
+	          	      		<td style="height: 60px;">123.00</td>
+	          	      		<td style="height: 60px;">12</td>
+	          	      		<td style="height: 60px;">20</td>
+	          	      		<td style="height: 60px;">123</td>
+	          	      		<td style="height: 60px;"><button>跟随</button></td>
+	          	      	</tr>
+	          	      </table>
+	          	   </div>
+	          	  <div class="tab-pane fade" id="week">
+	          	      <table border="0px;color:black;">
+	          	      	<tr>
+	          	      		<th style="width:60;height: 40px;"><span style="margin-left: 10px;">排名<span></th>
+	          	      		<th style="width:201px;height: 40px;">昵称</th>
+	          	      		<th style="width:100px;height: 40px;">收益率</th>
+	          	      		<th style="width:100px;height: 40px;">收益额</th>
+	          	      		<th style="width:100px;height: 40px;">盈亏点数</th>
+	          	      		<th style="width:100px;height: 40px;">最大回撤</th>
+	          	      		<th style="width:100px;height: 40px;">当前权益</th>
+	          	      		<th style="width:100px;height: 40px;">交易周期</th>
+	          	      		<th style="width:100px;height: 40px;">跟随人数</th>
+	          	      		<th style="width:100px;height: 40px;">交易笔数</th>
+	          	      		<th style="width:100px;height: 40px;">功能</th>
+	          	      	</tr>
+	          	      	<tr>
+	          	      		<td style="height: 60px;padding-top:20px;"><img src="./images/huangguan.png" alt="" /><span style="margin:0px 0px 0px -25px">1</span></td>
+                          <!-- 昵称是链接，点击进入交易详情页面 -->
+	          	      		<td style="height: 60px;"><img src="./images/paiming-touxiang.png" /><a href="#">阿呆</a></td>
+	          	      		<td style="height: 60px;" class="font-red">9.23%</td>
+	          	      		<td style="height: 60px;">￥5123,456,45</td>
+	          	      		<td style="height: 60px;">100</td>
+	          	      		<td style="height: 60px;">4.61%</td>
+	          	      		<td style="height: 60px;">123.00</td>
+	          	      		<td style="height: 60px;">12</td>
+	          	      		<td style="height: 60px;">20</td>
+	          	      		<td style="height: 60px;">123</td>
+	          	      		<td style="height: 60px;"><button>跟随</button></td>
+	          	      	</tr>
+	          	      </table>
+	          	   </div>
+	          	  <div class="tab-pane fade" id="month">
+	          	      <table border="0px;color:black;">
+	          	      	<tr>
+	          	      		<th style="width:60;height: 40px;"><span style="margin-left: 10px;">排名<span></th>
+	          	      		<th style="width:201px;height: 40px;">昵称</th>
+	          	      		<th style="width:100px;height: 40px;">收益率</th>
+	          	      		<th style="width:100px;height: 40px;">收益额</th>
+	          	      		<th style="width:100px;height: 40px;">盈亏点数</th>
+	          	      		<th style="width:100px;height: 40px;">最大回撤</th>
+	          	      		<th style="width:100px;height: 40px;">当前权益</th>
+	          	      		<th style="width:100px;height: 40px;">交易周期</th>
+	          	      		<th style="width:100px;height: 40px;">跟随人数</th>
+	          	      		<th style="width:100px;height: 40px;">交易笔数</th>
+	          	      		<th style="width:100px;height: 40px;">功能</th>
+	          	      	</tr>
+	          	      	<tr>
+	          	      		<td style="height: 60px;padding-top:20px;"><img src="./images/huangguan.png" alt="" /><span style="margin:0px 0px 0px -25px">1</span></td>
+                          <!-- 昵称是链接，点击进入交易详情页面 -->
+	          	      		<td style="height: 60px;"><img src="./images/paiming-touxiang.png" /><a href="#">阿呆</a></td>
+	          	      		<td style="height: 60px;" class="font-red">9.23%</td>
+	          	      		<td style="height: 60px;">￥5123,456,45</td>
+	          	      		<td style="height: 60px;">100</td>
+	          	      		<td style="height: 60px;">4.61%</td>
+	          	      		<td style="height: 60px;">123.00</td>
+	          	      		<td style="height: 60px;">12</td>
+	          	      		<td style="height: 60px;">20</td>
+	          	      		<td style="height: 60px;">123</td>
+	          	      		<td style="height: 60px;"><button>跟随</button></td>
+	          	      	</tr>
+	          	      	<tr>
+	          	      		<td style="height: 60px;padding-top:20px;"><img src="./images/huangguan.png" alt="" /><span style="margin:0px 0px 0px -25px">1</span></td>
+                          <!-- 昵称是链接，点击进入交易详情页面 -->
+	          	      		<td style="height: 60px;"><img src="./images/paiming-touxiang.png" /><a href="#">阿呆</a></td>
+	          	      		<td style="height: 60px;" class="font-red">9.23%</td>
+	          	      		<td style="height: 60px;">￥5123,456,45</td>
+	          	      		<td style="height: 60px;">100</td>
+	          	      		<td style="height: 60px;">4.61%</td>
+	          	      		<td style="height: 60px;">123.00</td>
+	          	      		<td style="height: 60px;">12</td>
+	          	      		<td style="height: 60px;">20</td>
+	          	      		<td style="height: 60px;">123</td>
+	          	      		<td style="height: 60px;"><button>跟随</button></td>
+	          	      	</tr>
+	          	      </table>
+	          	   </div>
+	          	  <div class="tab-pane fade" id="season">
+	          	      <table border="0px;color:black;">
+	          	      	<tr>
+	          	      		<th style="width:60;height: 40px;"><span style="margin-left: 10px;">排名<span></th>
+	          	      		<th style="width:201px;height: 40px;">昵称</th>
+	          	      		<th style="width:100px;height: 40px;">收益率</th>
+	          	      		<th style="width:100px;height: 40px;">收益额</th>
+	          	      		<th style="width:100px;height: 40px;">盈亏点数</th>
+	          	      		<th style="width:100px;height: 40px;">最大回撤</th>
+	          	      		<th style="width:100px;height: 40px;">当前权益</th>
+	          	      		<th style="width:100px;height: 40px;">交易周期</th>
+	          	      		<th style="width:100px;height: 40px;">跟随人数</th>
+	          	      		<th style="width:100px;height: 40px;">交易笔数</th>
+	          	      		<th style="width:100px;height: 40px;">功能</th>
+	          	      	</tr>
+	          	      	<tr>
+	          	      		<td style="height: 60px;padding-top:20px;"><img src="./images/huangguan.png" alt="" /><span style="margin:0px 0px 0px -25px">1</span></td>
+                          <!-- 昵称是链接，点击进入交易详情页面 -->
+	          	      		<td style="height: 60px;"><img src="./images/paiming-touxiang.png" /><a href="#">阿呆</a></td>
+	          	      		<td style="height: 60px;" class="font-red">9.23%</td>
+	          	      		<td style="height: 60px;">￥5123,456,45</td>
+	          	      		<td style="height: 60px;">100</td>
+	          	      		<td style="height: 60px;">4.61%</td>
+	          	      		<td style="height: 60px;">123.00</td>
+	          	      		<td style="height: 60px;">12</td>
+	          	      		<td style="height: 60px;">20</td>
+	          	      		<td style="height: 60px;">123</td>
+	          	      		<td style="height: 60px;"><button>跟随</button></td>
+	          	      	</tr>
+	          	      </table>
+	          	   </div>
+	          	  <div class="tab-pane fade" id="year">
+	          	      <table border="0px;color:black;">
+	          	      	<tr>
+	          	      		<th style="width:60;height: 40px;"><span style="margin-left: 10px;">排名<span></th>
+	          	      		<th style="width:201px;height: 40px;">昵称</th>
+	          	      		<th style="width:100px;height: 40px;">收益率</th>
+	          	      		<th style="width:100px;height: 40px;">收益额</th>
+	          	      		<th style="width:100px;height: 40px;">盈亏点数</th>
+	          	      		<th style="width:100px;height: 40px;">最大回撤</th>
+	          	      		<th style="width:100px;height: 40px;">当前权益</th>
+	          	      		<th style="width:100px;height: 40px;">交易周期</th>
+	          	      		<th style="width:100px;height: 40px;">跟随人数</th>
+	          	      		<th style="width:100px;height: 40px;">交易笔数</th>
+	          	      		<th style="width:100px;height: 40px;">功能</th>
+	          	      	</tr>
+	          	      	<tr>
+	          	      		<td style="height: 60px;padding-top:20px;"><img src="./images/huangguan.png" alt="" /><span style="margin:0px 0px 0px -25px">1</span></td>
+                          <!-- 昵称是链接，点击进入交易详情页面 -->
+	          	      		<td style="height: 60px;"><img src="./images/paiming-touxiang.png" /><a href="#">阿呆</a></td>
+	          	      		<td style="height: 60px;" class="font-red">9.23%</td>
+	          	      		<td style="height: 60px;">￥5123,456,45</td>
+	          	      		<td style="height: 60px;">100</td>
+	          	      		<td style="height: 60px;">4.61%</td>
+	          	      		<td style="height: 60px;">123.00</td>
+	          	      		<td style="height: 60px;">12</td>
+	          	      		<td style="height: 60px;">20</td>
+	          	      		<td style="height: 60px;">123</td>
+	          	      		<td style="height: 60px;"><button>跟随</button></td>
+	          	      	</tr>
+	          	      	<tr>
+	          	      		<td style="height: 60px;padding-top:20px;"><img src="./images/huangguan.png" alt="" /><span style="margin:0px 0px 0px -25px">1</span></td>
+                          <!-- 昵称是链接，点击进入交易详情页面 -->
+	          	      		<td style="height: 60px;"><img src="./images/paiming-touxiang.png" /><a href="#">阿呆</a></td>
+	          	      		<td style="height: 60px;" class="font-red">9.23%</td>
+	          	      		<td style="height: 60px;">￥5123,456,45</td>
+	          	      		<td style="height: 60px;">100</td>
+	          	      		<td style="height: 60px;">4.61%</td>
+	          	      		<td style="height: 60px;">123.00</td>
+	          	      		<td style="height: 60px;">12</td>
+	          	      		<td style="height: 60px;">20</td>
+	          	      		<td style="height: 60px;">123</td>
+	          	      		<td style="height: 60px;"><button>跟随</button></td>
+	          	      	</tr>
+	          	      </table>
+	          	   </div>
+	          	</div>
+	          </div>
+	    	</div>
+	    </div>
+    </div>
+    <div class="footerd">
+        <span>版权所有版权所有版权所有版权所有版权所有版权所有版权所有版权所有</span><br/>
+        <span>市场有风险，投资需谨慎</span>
+    </div>
+
+
+
+	  <script type="text/javascript" src="./js/jquery.min.js"> </script>
+	  <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+	  <script src="./js/validator/validator.js"></script>
+	  <script src="./build/js/custom.min.js"></script>
+	  <script type="text/javascript" src="./js/jDialog.js"></script>
+	  <script src="./js/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>
+	  <script src="./js/bootstrap-fileinput.js"></script>
+      <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="./js/moment.js"></script>
+      <script type="text/javascript" src="./js/daterangepicker.js"></script>
+
+    <script type="text/javascript">
+      	$('.hover').mouseover(function(){
+          $(this).find('img').attr('src','./images/arrow-down.png')
+          $(this).find('ul').css('display','block')
+          $(this).child('a').css('color','#ff0000')
+      	})
+      	$('.hover').mouseout(function(){
+          $(this).find('img').attr('src','./images/arrow-up.png')
+          $(this).find('ul').css('display','none')
+          $(this).child('a').css('color','#4c4c4c')
+      	})
+    </script>
+  </body>
+</html>
