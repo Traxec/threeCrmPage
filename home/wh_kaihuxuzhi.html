@@ -11,6 +11,7 @@
     <link href="./css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="all" href="./css/daterangepicker-bs3.css" />
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/case.css"/>
     <!-- <link rel="stylesheet" type="text/css" href="./css/demo.css"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
@@ -182,7 +183,7 @@
     		<div class="knowledge-one">&nbsp&nbsp&nbsp&nbsp请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》请务必认真阅读和理解本《用户服务协议》</div>
     		<div class="knowledge-two">
 			<div>
-			  <input type="submit" class="btn btn-info btnl" name="" value="同意协议立即开户">
+			  <input type="submit" class="btn btn-info btnl" id="test3" value="同意协议立即开户">
 			</div>
     		</div>
 	    	</div>
@@ -197,6 +198,12 @@
 
 	  <script type="text/javascript" src="./js/jquery.min.js"> </script>
 	  <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script src="./js/validator/validator.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="./build/js/custom.min.js"></script>
+    <link rel="stylesheet" href="./js/jDialog/jDialog.css" type="text/css">
+    <script type="text/javascript" src="./js/jDialog.js"></script>
+    <!-- <script type="text/javascript" src="./js/zTree_v3/js/jquery.ztree.core.js"></script> -->
 
     <script type="text/javascript">
       	$(function () { $('.collapse').collapse('toggle')});
@@ -207,6 +214,29 @@
       			$(this).find('img').attr('src','./images/arrow-right.png')
       		}
       	})
+    </script>
+    <script type="text/javascript">
+    $("#test3").click(function(){
+    var dialog = jDialog.alert('请先完成实名认证(未实名认证)！<br> 恭喜您,开户成功!请留意邮件或短信!(已实名认证)',{},{
+    showShadow: false,// 不显示对话框阴影
+    buttonAlign : 'center',
+    events : {
+      show : function(evt){
+        var dlg = evt.data.dialog;
+      },
+      close : function(evt){
+        var dlg = evt.data.dialog;
+      },
+      enterKey : function(evt){
+        alert('enter key pressed!');
+      },
+      escKey : function(evt){
+        alert('esc key pressed!');
+        evt.data.dialog.close();
+      }
+    }
+    });
+  }) ;
     </script>
 
   </body>

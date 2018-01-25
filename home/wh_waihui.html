@@ -5,7 +5,7 @@
     <title></title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/app.css">
-<link href="images/logo.ico" rel="shortcut icon" type="image/x-icon"/>
+    <link href="images/logo.ico" rel="shortcut icon" type="image/x-icon"/>
     <link rel="stylesheet" type="text/css" href="./css/case.css"/>
     <link rel="stylesheet" type="text/css" href="./js/zTree_v3/css/zTreeStyle/zTreeStyle.css"/>
 
@@ -191,7 +191,7 @@
 		    				</div>
 	    				</div>
 	    				<div class="innr-right-two">
-	    					<a  style="margin-left:115px;background:white;color:#f4323b;" data-toggle="modal" data-target="" id="test3"><span>开户专区</span></a>
+	    					<a style="margin-left:115px;background:white;color:#f4323b;"  data-toggle="modal" data-target="" href="file:///E:/threeCrmPage/home/wh_kaihuxuzhi.html"><span>开户专区</span></a>
 	    				</div>
 	    			</div>
 	    			<div class="in-right-top-twoo">
@@ -216,8 +216,8 @@
 		    				</div>
 	    				</div>
 	    				<div class="innr-right-two">
-	    					<a class="test4"><span>持仓订单</span></a>
-	    					<a class="test4"><span>历史订单</span></a>
+	    					<a class="test5"><span>持仓订单</span></a>
+	    					<a class="test5"><span>历史订单</span></a>
 	    				</div>
 	    			</div>
 	    			<div class="clear"></div>
@@ -523,7 +523,7 @@
 			}
 		}
 	  });
-	}) ;
+	});
 	</script>
 	<script type="text/javascript">
 		$("#test3").click(function(){
@@ -569,7 +569,28 @@
 	  });
 	}) ;
       $(".test4").click(function(){
-    var dialog = jDialog.alert('请先开户！(未开户)<br>弹出输入框(已开户)',{},{
+    var dialog = jDialog.alert('请先开户！(未开户)<br>打开树形图(已开户)',{},{
+    showShadow: false,// 不显示对话框阴影
+    buttonAlign : 'center',
+    events : {
+      show : function(evt){
+        var dlg = evt.data.dialog;
+      },
+      close : function(evt){
+        var dlg = evt.data.dialog;
+      },
+      enterKey : function(evt){
+        alert('enter key pressed!');
+      },
+      escKey : function(evt){
+        alert('esc key pressed!');
+        evt.data.dialog.close();
+      }
+    }
+    });
+  }) ;
+  $(".test5").click(function(){
+    var dialog = jDialog.alert('请先开户！(未开户)<br>已开户跳转到所在页面(已开户)',{},{
     showShadow: false,// 不显示对话框阴影
     buttonAlign : 'center',
     events : {
