@@ -80,7 +80,7 @@
   </div>
   <div class="inc jyyxq">
     <div class="in-jyyxq">
-      <div class="info pull-left">
+      <div class="info" style="float:left">
         <div>
           <img src="./images/touxiang.png" alt="">
           <span>昵称</span>
@@ -95,21 +95,26 @@
           <a href="" class="btn btn-default">跟随他</a>
         </div>
       </div>
-      <div class="for pull-right">
+      <div class="for" style="margin:0px 0px 0px 271px;padding-top:1px;">
         <div class="title">
           <div class="block pull-left"></div>
           <span class="pull-left">业绩统计</span>
         </div>
 
         <div class="yjtj">
-
+          <div><div>102.83%</div><div>收益率</div></div>
+          <div><div>$12312.02</div><div>历史跟随获利</div></div>
+          <div><div>$12312.02</div><div>持仓盈亏</div></div>
+          <div><div>$12312.02</div><div>持仓跟随获利</div></div>
+          <div><div>$10.23</div><div>持仓手数</div></div>
+          <div><div>$102.23</div><div>跟单手数</div></div>
         </div>
         <div class="title">
           <div class="block pull-left"></div>
           <span class="pull-left">资金曲线图</span>
         </div>
 
-        <ul id="myTab" class="nav nav-tabs" style="margin-top: 30px;margin-left:0px">
+        <ul id="myTab" class="nav nav-tabs" style="margin-top: 30px;margin-left:0px;height:50px">
           <li class="active"><a href="#ios" data-toggle="tab">余额/收益</a></li>
           <li><a href="#and" data-toggle="tab">出入金</a></li>
           <li><a href="#ioser" data-toggle="tab">胜率</a></li>
@@ -131,8 +136,8 @@
         <div class="ddxx-title" style="margin-top:30px">
           <div class="block pull-left"></div>
           <span class="pull-left">订单信息</span>
-          <div class="pull-left"><img src="./images/gender.png" alt=""><span>操盘手</span></div>
-          <div class="pull-left"><img src="./images/gender02.png" alt=""><span>跟随者</span></div>
+          <div class="pull-left" id="btn-cps"><img src="./images/gender02.png" alt=""><span style="color:#f6390d">操盘手</span></div>
+          <div class="pull-left" id="btn-gsz"><img src="./images/gender.png" alt=""><span>跟随者</span></div>
           <div class="clearfix"></div>
         </div>
 
@@ -163,13 +168,13 @@
             <div class="clearfix"></div>
           </div>
         </div>
-        <div class="ddxx">
+        <div class="ddxx" id="cps">
           <ul id="myTab" class="nav nav-tabs" style="margin-top: 30px;">
-            <li class="active"><a href="#day" data-toggle="tab">持仓订单</a></li>
-            <li><a href="#week" data-toggle="tab">历史订单</a></li>
+            <li class="active"><a href="#cc" data-toggle="tab">持仓订单</a></li>
+            <li><a href="#ls" data-toggle="tab">历史订单</a></li>
           </ul>
           <div id="myTabContent" class="tab-content">
-            <div class="tab-pane fade in active" id="day">
+            <div class="tab-pane fade in active" id="cc">
               <table border="0px;color:black;">
                 <tr>
                   <th style="width:99px;height: 40px;"><span style="margin-left: 10px;">交易品种<span></th>
@@ -188,436 +193,465 @@
                     <td style="height: 60px;">sell</td>
                     <td style="height: 60px;">1.00</td>
                     <td style="height: 60px;">2017.10.27<br>17:59:03</td>
-                    <td style="height: 60px;">1.20069<br><span style="font-size:12px;color:#999">1.20069</span></td>
+                    <td style="height: 60px;">
+                      <span style="font-size:12px;color:#999">1.20069</span>
+                      <br>1.20069
+                    </td>
                     <td style="height: 60px;">1.20738</td>
                     <td style="height: 60px;">1.20738</td>
                     <td style="height: 60px;">$1231.23</td>
                     <td style="height: 60px;">12.35</td>
                   </tr>
                   <tr>
-                    <td style="height: 60px;padding-top:20px;"><img src="./images/huangguan.png" alt="" /><span style="margin:0px 0px 0px -25px">3</span></td>
-                    <td style="height: 60px;"><img src="./images/paiming-touxiang.png" /><a href="#">阿呆</a></td>
-                    <td style="height: 60px;" class="font-red">9.23%</td>
-                    <td style="height: 60px;">￥5123,456,45</td>
-                    <td style="height: 60px;">100</td>
-                    <td style="height: 60px;">4.61%</td>
-                    <td style="height: 60px;">123.00</td>
-                    <td style="height: 60px;">12</td>
-                    <td style="height: 60px;">20</td>
-                    <td style="height: 60px;">123</td>
-                    <td style="height: 60px;"><button>跟随</button></td>
+                    <td style="height: 60px;">eurusd</td>
+                    <!-- 昵称是链接，点击进入交易详情页面 -->
+                    <td style="height: 60px;">sell</td>
+                    <td style="height: 60px;">1.00</td>
+                    <td style="height: 60px;">2017.10.27<br>17:59:03</td>
+                    <td style="height: 60px;">
+                      <span style="font-size:12px;color:#999">1.20069</span>
+                      <br>1.20069
+                    </td>
+                    <td style="height: 60px;">1.20738</td>
+                    <td style="height: 60px;">1.20738</td>
+                    <td style="height: 60px;">$1231.23</td>
+                    <td style="height: 60px;">12.35</td>
                   </tr>
                   <tr>
-                    <td style="height: 60px;"><span style="margin-left: 10px;">4<span></td>
-                      <td style="height: 60px;"><img src="./images/paiming-touxiang.png" /><a href="#">阿呆</a></td>
-                      <td style="height: 60px;" class="font-red">9.23%</td>
-                      <td style="height: 60px;">￥5123,456,45</td>
-                      <td style="height: 60px;">100</td>
-                      <td style="height: 60px;">4.61%</td>
-                      <td style="height: 60px;">123.00</td>
-                      <td style="height: 60px;">12</td>
-                      <td style="height: 60px;">20</td>
-                      <td style="height: 60px;">123</td>
-                      <td style="height: 60px;"><button>跟随</button></td>
-                    </tr>
-                    <tr>
-                      <td style="height: 60px;"><span style="margin-left: 10px;">5<span></td>
-                        <td style="height: 60px;"><img src="./images/paiming-touxiang.png" /><a href="#">阿呆</a></td>
-                        <td style="height: 60px;" class="font-red">9.23%</td>
-                        <td style="height: 60px;">￥5123,456,45</td>
-                        <td style="height: 60px;">100</td>
-                        <td style="height: 60px;">4.61%</td>
-                        <td style="height: 60px;">123.00</td>
-                        <td style="height: 60px;">12</td>
-                        <td style="height: 60px;">20</td>
-                        <td style="height: 60px;">123</td>
-                        <td style="height: 60px;"><button>跟随</button></td>
-                      </tr>
-                      <tr>
-                        <td style="height: 60px;"><span style="margin-left: 10px;">6<span></td>
-                          <td style="height: 60px;"><img src="./images/paiming-touxiang.png" /><a href="#">阿呆</a></td>
-                          <td style="height: 60px;" class="font-red">9.23%</td>
-                          <td style="height: 60px;">￥5123,456,45</td>
-                          <td style="height: 60px;">100</td>
-                          <td style="height: 60px;">4.61%</td>
-                          <td style="height: 60px;">123.00</td>
-                          <td style="height: 60px;">12</td>
-                          <td style="height: 60px;">20</td>
-                          <td style="height: 60px;">123</td>
-                          <td style="height: 60px;"><button>跟随</button></td>
-                        </tr>
-                        <tr>
-                          <td style="height: 60px;"><span style="margin-left: 10px;">7<span></td>
-                            <td style="height: 60px;"><img src="./images/paiming-touxiang.png" /><a href="#">阿呆</a></td>
-                            <td style="height: 60px;" class="font-red">9.23%</td>
-                            <td style="height: 60px;">￥5123,456,45</td>
-                            <td style="height: 60px;">100</td>
-                            <td style="height: 60px;">4.61%</td>
-                            <td style="height: 60px;">123.00</td>
-                            <td style="height: 60px;">12</td>
-                            <td style="height: 60px;">20</td>
-                            <td style="height: 60px;">123</td>
-                            <td style="height: 60px;"><button>跟随</button></td>
-                          </tr>
-                              </table>
-                            </div>
-                            <div class="tab-pane fade" id="week">
-                              <table border="0px;color:black;">
-                                <tr>
-                                  <th style="width:60;height: 40px;"><span style="margin-left: 10px;">排名<span></th>
-                                    <th style="width:201px;height: 40px;">昵称</th>
-                                    <th style="width:100px;height: 40px;">收益率</th>
-                                    <th style="width:100px;height: 40px;">收益额</th>
-                                    <th style="width:100px;height: 40px;">盈亏点数</th>
-                                    <th style="width:100px;height: 40px;">最大回撤</th>
-                                    <th style="width:100px;height: 40px;">当前权益</th>
-                                    <th style="width:100px;height: 40px;">交易周期</th>
-                                    <th style="width:100px;height: 40px;">跟随人数</th>
-                                    <th style="width:100px;height: 40px;">交易笔数</th>
-                                    <th style="width:100px;height: 40px;">功能</th>
-                                  </tr>
-                                  <tr>
-                                    <td style="height: 60px;padding-top:20px;"><img src="./images/huangguan.png" alt="" /><span style="margin:0px 0px 0px -25px">1</span></td>
-                                    <!-- 昵称是链接，点击进入交易详情页面 -->
-                                    <td style="height: 60px;"><img src="./images/paiming-touxiang.png" /><a href="#">十条数据</a></td>
-                                    <td style="height: 60px;" class="font-red">9.23%</td>
-                                    <td style="height: 60px;">￥5123,456,45</td>
-                                    <td style="height: 60px;">100</td>
-                                    <td style="height: 60px;">4.61%</td>
-                                    <td style="height: 60px;">123.00</td>
-                                    <td style="height: 60px;">12</td>
-                                    <td style="height: 60px;">20</td>
-                                    <td style="height: 60px;">123</td>
-                                    <td style="height: 60px;"><button>跟随</button></td>
-                                  </tr>
-                                </table>
-                              </div>
-                              <div class="tab-pane fade" id="month">
-                                <table border="0px;color:black;">
-                                  <tr>
-                                    <th style="width:60;height: 40px;"><span style="margin-left: 10px;">排名<span></th>
-                                      <th style="width:201px;height: 40px;">昵称</th>
-                                      <th style="width:100px;height: 40px;">收益率</th>
-                                      <th style="width:100px;height: 40px;">收益额</th>
-                                      <th style="width:100px;height: 40px;">盈亏点数</th>
-                                      <th style="width:100px;height: 40px;">最大回撤</th>
-                                      <th style="width:100px;height: 40px;">当前权益</th>
-                                      <th style="width:100px;height: 40px;">交易周期</th>
-                                      <th style="width:100px;height: 40px;">跟随人数</th>
-                                      <th style="width:100px;height: 40px;">交易笔数</th>
-                                      <th style="width:100px;height: 40px;">功能</th>
-                                    </tr>
-                                    <tr>
-                                      <td style="height: 60px;padding-top:20px;"><img src="./images/huangguan.png" alt="" /><span style="margin:0px 0px 0px -25px">1</span></td>
-                                      <!-- 昵称是链接，点击进入交易详情页面 -->
-                                      <td style="height: 60px;"><img src="./images/paiming-touxiang.png" /><a href="#">十条数据</a></td>
-                                      <td style="height: 60px;" class="font-red">9.23%</td>
-                                      <td style="height: 60px;">￥5123,456,45</td>
-                                      <td style="height: 60px;">100</td>
-                                      <td style="height: 60px;">4.61%</td>
-                                      <td style="height: 60px;">123.00</td>
-                                      <td style="height: 60px;">12</td>
-                                      <td style="height: 60px;">20</td>
-                                      <td style="height: 60px;">123</td>
-                                      <td style="height: 60px;"><button>跟随</button></td>
-                                    </tr>
-                                    <tr>
-                                      <td style="height: 60px;padding-top:20px;"><img src="./images/huangguan.png" alt="" /><span style="margin:0px 0px 0px -25px">1</span></td>
-                                      <!-- 昵称是链接，点击进入交易详情页面 -->
-                                      <td style="height: 60px;"><img src="./images/paiming-touxiang.png" /><a href="#">十条数据</a></td>
-                                      <td style="height: 60px;" class="font-red">9.23%</td>
-                                      <td style="height: 60px;">￥5123,456,45</td>
-                                      <td style="height: 60px;">100</td>
-                                      <td style="height: 60px;">4.61%</td>
-                                      <td style="height: 60px;">123.00</td>
-                                      <td style="height: 60px;">12</td>
-                                      <td style="height: 60px;">20</td>
-                                      <td style="height: 60px;">123</td>
-                                      <td style="height: 60px;"><button>跟随</button></td>
-                                    </tr>
-                                  </table>
-                                </div>
-                                <div class="tab-pane fade" id="season">
-                                  <table border="0px;color:black;">
-                                    <tr>
-                                      <th style="width:60;height: 40px;"><span style="margin-left: 10px;">排名<span></th>
-                                        <th style="width:201px;height: 40px;">昵称</th>
-                                        <th style="width:100px;height: 40px;">收益率</th>
-                                        <th style="width:100px;height: 40px;">收益额</th>
-                                        <th style="width:100px;height: 40px;">盈亏点数</th>
-                                        <th style="width:100px;height: 40px;">最大回撤</th>
-                                        <th style="width:100px;height: 40px;">当前权益</th>
-                                        <th style="width:100px;height: 40px;">交易周期</th>
-                                        <th style="width:100px;height: 40px;">跟随人数</th>
-                                        <th style="width:100px;height: 40px;">交易笔数</th>
-                                        <th style="width:100px;height: 40px;">功能</th>
-                                      </tr>
-                                      <tr>
-                                        <td style="height: 60px;padding-top:20px;"><img src="./images/huangguan.png" alt="" /><span style="margin:0px 0px 0px -25px">1</span></td>
-                                        <!-- 昵称是链接，点击进入交易详情页面 -->
-                                        <td style="height: 60px;"><img src="./images/paiming-touxiang.png" /><a href="#">十条数据</a></td>
-                                        <td style="height: 60px;" class="font-red">9.23%</td>
-                                        <td style="height: 60px;">￥5123,456,45</td>
-                                        <td style="height: 60px;">100</td>
-                                        <td style="height: 60px;">4.61%</td>
-                                        <td style="height: 60px;">123.00</td>
-                                        <td style="height: 60px;">12</td>
-                                        <td style="height: 60px;">20</td>
-                                        <td style="height: 60px;">123</td>
-                                        <td style="height: 60px;"><button>跟随</button></td>
-                                      </tr>
-                                    </table>
-                                  </div>
-                                  <div class="tab-pane fade" id="year">
-                                    <table border="0px;color:black;">
-                                      <tr>
-                                        <th style="width:60;height: 40px;"><span style="margin-left: 10px;">排名<span></th>
-                                          <th style="width:201px;height: 40px;">昵称</th>
-                                          <th style="width:100px;height: 40px;">收益率</th>
-                                          <th style="width:100px;height: 40px;">收益额</th>
-                                          <th style="width:100px;height: 40px;">盈亏点数</th>
-                                          <th style="width:100px;height: 40px;">最大回撤</th>
-                                          <th style="width:100px;height: 40px;">当前权益</th>
-                                          <th style="width:100px;height: 40px;">交易周期</th>
-                                          <th style="width:100px;height: 40px;">跟随人数</th>
-                                          <th style="width:100px;height: 40px;">交易笔数</th>
-                                          <th style="width:100px;height: 40px;">功能</th>
-                                        </tr>
-                                        <tr>
-                                          <td style="height: 60px;padding-top:20px;"><img src="./images/huangguan.png" alt="" /><span style="margin:0px 0px 0px -25px">1</span></td>
-                                          <!-- 昵称是链接，点击进入交易详情页面 -->
-                                          <td style="height: 60px;"><img src="./images/paiming-touxiang.png" /><a href="#">十条数据</a></td>
-                                          <td style="height: 60px;" class="font-red">9.23%</td>
-                                          <td style="height: 60px;">￥5123,456,45</td>
-                                          <td style="height: 60px;">100</td>
-                                          <td style="height: 60px;">4.61%</td>
-                                          <td style="height: 60px;">123.00</td>
-                                          <td style="height: 60px;">12</td>
-                                          <td style="height: 60px;">20</td>
-                                          <td style="height: 60px;">123</td>
-                                          <td style="height: 60px;"><button>跟随</button></td>
-                                        </tr>
-                                        <tr>
-                                          <td style="height: 60px;padding-top:20px;"><img src="./images/huangguan.png" alt="" /><span style="margin:0px 0px 0px -25px">1</span></td>
-                                          <!-- 昵称是链接，点击进入交易详情页面 -->
-                                          <td style="height: 60px;"><img src="./images/paiming-touxiang.png" /><a href="#">十条数据</a></td>
-                                          <td style="height: 60px;" class="font-red">9.23%</td>
-                                          <td style="height: 60px;">￥5123,456,45</td>
-                                          <td style="height: 60px;">100</td>
-                                          <td style="height: 60px;">4.61%</td>
-                                          <td style="height: 60px;">123.00</td>
-                                          <td style="height: 60px;">12</td>
-                                          <td style="height: 60px;">20</td>
-                                          <td style="height: 60px;">123</td>
-                                          <td style="height: 60px;"><button>跟随</button></td>
-                                        </tr>
-                                      </table>
-                                    </div>
-
-	          	       <div class="box" id="box">
-	          	           <button type="button" id="firstPage" class="turnPage first-page">首页</button>
-	          	           <button class="turnPage" id="prePage">上一页</button>
-	          	           <div class="pageWrap" style="width:300px">
-	          	               <ul id="pageSelect" style="transition: all 600ms; transform: translateX(0px);">
-	          	                   <li class="">1</li>
-	          	                   <li>2</li>
-	          	                   <li class="sel-page">3</li>
-	          	                   <li>4</li>
-	          	                   <li>5</li>
-	          	               </ul>
-	          	           </div>
-	          	           <button class="turnPage" id="nextPage">下一页</button>
-	          	           <button type="button" id="lastPage" class="last-page">尾页</button>
-	          	           <input type="text" placeholder="1" class="jump-text" id="jumpText">
-	          	           <button type="button" class="jump-button" id="jumpBtn">跳转</button>
-	          	           <p class="total-pages">共&nbsp;30&nbsp;页</p><p class="total-count">合计300条数据</p>
-	          	       </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="footerd">
-                            <span>版权所有版权所有版权所有版权所有版权所有版权所有版权所有版权所有</span><br/>
-                            <span>市场有风险，投资需谨慎</span>
-                          </div>
+                    <td style="height: 60px;">eurusd</td>
+                    <!-- 昵称是链接，点击进入交易详情页面 -->
+                    <td style="height: 60px;">sell</td>
+                    <td style="height: 60px;">1.00</td>
+                    <td style="height: 60px;">2017.10.27<br>17:59:03</td>
+                    <td style="height: 60px;">
+                      <span style="font-size:12px;color:#999">1.20069</span>
+                      <br>1.20069
+                    </td>
+                    <td style="height: 60px;">1.20738</td>
+                    <td style="height: 60px;">1.20738</td>
+                    <td style="height: 60px;">$1231.23</td>
+                    <td style="height: 60px;">12.35</td>
+                  </tr>
+                  <tr>
+                    <td style="height: 60px;">eurusd</td>
+                    <!-- 昵称是链接，点击进入交易详情页面 -->
+                    <td style="height: 60px;">sell</td>
+                    <td style="height: 60px;">1.00</td>
+                    <td style="height: 60px;">2017.10.27<br>17:59:03</td>
+                    <td style="height: 60px;">
+                      <span style="font-size:12px;color:#999">1.20069</span>
+                      <br>1.20069
+                    </td>
+                    <td style="height: 60px;">1.20738</td>
+                    <td style="height: 60px;">1.20738</td>
+                    <td style="height: 60px;">$1231.23</td>
+                    <td style="height: 60px;">12.35</td>
+                  </tr>
+                  <tr>
+                    <td style="height: 60px;">eurusd</td>
+                    <!-- 昵称是链接，点击进入交易详情页面 -->
+                    <td style="height: 60px;">sell</td>
+                    <td style="height: 60px;">1.00</td>
+                    <td style="height: 60px;">2017.10.27<br>17:59:03</td>
+                    <td style="height: 60px;">
+                      <span style="font-size:12px;color:#999">1.20069</span>
+                      <br>1.20069
+                    </td>
+                    <td style="height: 60px;">1.20738</td>
+                    <td style="height: 60px;">1.20738</td>
+                    <td style="height: 60px;">$1231.23</td>
+                    <td style="height: 60px;">12.35</td>
+                  </tr>
+                  <tr>
+                    <td style="height: 60px;">eurusd</td>
+                    <!-- 昵称是链接，点击进入交易详情页面 -->
+                    <td style="height: 60px;">sell</td>
+                    <td style="height: 60px;">1.00</td>
+                    <td style="height: 60px;">2017.10.27<br>17:59:03</td>
+                    <td style="height: 60px;">
+                      <span style="font-size:12px;color:#999">1.20069</span>
+                      <br>1.20069
+                    </td>
+                    <td style="height: 60px;">1.20738</td>
+                    <td style="height: 60px;">1.20738</td>
+                    <td style="height: 60px;">$1231.23</td>
+                    <td style="height: 60px;">12.35</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="tab-pane fade" id="ls">
+                <table border="0px;color:black;">
+                <tr>
+                  <th style="width:99px;height: 40px;"><span style="margin-left: 10px;">交易品种<span></th>
+                    <th style="width:99px;height: 40px;">交易类型</th>
+                    <th style="width:99px;height: 40px;">成交量</th>
+                    <th style="width:99px;height: 40px;">开仓时间</th>
+                    <th style="width:99px;height: 40px;">开仓价位</th>
+                    <th style="width:99px;height: 40px;">止损</th>
+                    <th style="width:99px;height: 40px;">止盈</th>
+                    <th style="width:99px;height: 40px;">收益金额</th>
+                    <th style="width:99px;height: 40px;">收益点数</th>
+                  </tr>
+                  <tr>
+                    <td style="height: 60px;">eurusd</td>
+                    <!-- 昵称是链接，点击进入交易详情页面 -->
+                    <td style="height: 60px;">sell</td>
+                    <td style="height: 60px;">1.00</td>
+                    <td style="height: 60px;">2017.10.27<br>17:59:03</td>
+                    <td style="height: 60px;">
+                      <span style="font-size:12px;color:#999">1.20069</span>
+                      <br>1.20069
+                    </td>
+                    <td style="height: 60px;">1.20738</td>
+                    <td style="height: 60px;">1.20738</td>
+                    <td style="height: 60px;">$1231.23</td>
+                    <td style="height: 60px;">12.35</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="box" id="box">
+                <button type="button" id="firstPage" class="turnPage first-page">首页</button>
+                <button class="turnPage" id="prePage">上一页</button>
+                <div class="pageWrap" style="width:300px">
+                  <ul id="pageSelect" style="transition: all 600ms; transform: translateX(0px);">
+                    <li class="">1</li>
+                    <li>2</li>
+                    <li class="sel-page">3</li>
+                    <li>4</li>
+                    <li>5</li>
+                  </ul>
+                </div>
+                <button class="turnPage" id="nextPage">下一页</button>
+                <button type="button" id="lastPage" class="last-page">尾页</button>
+                <input type="text" placeholder="1" class="jump-text" id="jumpText">
+                <button type="button" class="jump-button" id="jumpBtn">跳转</button>
+                <p class="total-pages">共&nbsp;30&nbsp;页</p><p class="total-count">合计300条数据</p>
+              </div>
+            </div>
+          </div>
+        <div class="ddxx" id="gsz" style="display:none">
+          <ul id="myTab" class="nav nav-tabs" style="margin-top: 30px;">
+            <li class="active"><a href="#chicang" data-toggle="tab">持仓订单</a></li>
+            <li><a href="#lishi" data-toggle="tab">历史订单</a></li>
+          </ul>
+          <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade in active" id="chicang">
+              <table border="0px;color:black;">
+                  <th style="width:222px;height: 40px;"><span style="margin-left: 10px;">跟随者<span></th>
+                    <th style="width:222px;height: 40px;">跟随策略</th>
+                    <th style="width:111px;height: 40px;">跟随时间</th>
+                    <th style="width:111px;height: 40px;">跟随金额</th>
+                    <th style="width:111px;height: 40px;">手数</th>
+                    <th style="width:111px;height: 40px;">跟随收益</th>
+                  </tr>
+                  <tr>
+                    <td style="height: 60px;"><img src="./images/paiming-touxiang.png" alt="">阿呆</td>
+                    <!-- 昵称是链接，点击进入交易详情页面 -->
+                    <td style="height: 60px;">固定手数&nbsp;倍数</td>
+                    <td style="height: 60px;">7天</td>
+                    <td style="height: 60px;">$5000.23</td>
+                    <td style="height: 60px;">12.30</td>
+                    <td style="height: 60px;">$1235.30</td>
+                  </tr>
+                  <tr>
+                    <td style="height: 60px;"><img src="./images/paiming-touxiang.png" alt="">阿呆</td>
+                    <!-- 昵称是链接，点击进入交易详情页面 -->
+                    <td style="height: 60px;">固定手数&nbsp;倍数</td>
+                    <td style="height: 60px;">7天</td>
+                    <td style="height: 60px;">$5000.23</td>
+                    <td style="height: 60px;">12.30</td>
+                    <td style="height: 60px;">$1235.30</td>
+                  </tr>
+                  <tr>
+                    <td style="height: 60px;"><img src="./images/paiming-touxiang.png" alt="">阿呆</td>
+                    <!-- 昵称是链接，点击进入交易详情页面 -->
+                    <td style="height: 60px;">固定手数&nbsp;倍数</td>
+                    <td style="height: 60px;">7天</td>
+                    <td style="height: 60px;">$5000.23</td>
+                    <td style="height: 60px;">12.30</td>
+                    <td style="height: 60px;">$1235.30</td>
+                  </tr>
+                  <tr>
+                    <td style="height: 60px;"><img src="./images/paiming-touxiang.png" alt="">阿呆</td>
+                    <!-- 昵称是链接，点击进入交易详情页面 -->
+                    <td style="height: 60px;">固定手数&nbsp;倍数</td>
+                    <td style="height: 60px;">7天</td>
+                    <td style="height: 60px;">$5000.23</td>
+                    <td style="height: 60px;">12.30</td>
+                    <td style="height: 60px;">$1235.30</td>
+                  </tr>
+                  <tr>
+                    <td style="height: 60px;"><img src="./images/paiming-touxiang.png" alt="">阿呆</td>
+                    <!-- 昵称是链接，点击进入交易详情页面 -->
+                    <td style="height: 60px;">固定手数&nbsp;倍数</td>
+                    <td style="height: 60px;">7天</td>
+                    <td style="height: 60px;">$5000.23</td>
+                    <td style="height: 60px;">12.30</td>
+                    <td style="height: 60px;">$1235.30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="tab-pane fade" id="lishi">
+                <table border="0px;color:black;">
+                  <th style="width:222px;height: 40px;"><span style="margin-left: 10px;">跟随者<span></th>
+                    <th style="width:222px;height: 40px;">跟随策略</th>
+                    <th style="width:111px;height: 40px;">跟随时间</th>
+                    <th style="width:111px;height: 40px;">跟随金额</th>
+                    <th style="width:111px;height: 40px;">手数</th>
+                    <th style="width:111px;height: 40px;">跟随收益</th>
+                  </tr>
+                  <tr>
+                    <td style="height: 60px;"><img src="./images/paiming-touxiang.png" alt="">阿呆</td>
+                    <!-- 昵称是链接，点击进入交易详情页面 -->
+                    <td style="height: 60px;">固定手数&nbsp;倍数</td>
+                    <td style="height: 60px;">7天</td>
+                    <td style="height: 60px;">$5000.23</td>
+                    <td style="height: 60px;">12.30</td>
+                    <td style="height: 60px;">$1235.30</td>
+                  </tr>
+                  <tr>
+                    <td style="height: 60px;"><img src="./images/paiming-touxiang.png" alt="">阿呆</td>
+                    <!-- 昵称是链接，点击进入交易详情页面 -->
+                    <td style="height: 60px;">固定手数&nbsp;倍数</td>
+                    <td style="height: 60px;">7天</td>
+                    <td style="height: 60px;">$5000.23</td>
+                    <td style="height: 60px;">12.30</td>
+                    <td style="height: 60px;">$1235.30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="box" id="box">
+                <button type="button" id="firstPage" class="turnPage first-page">首页</button>
+                <button class="turnPage" id="prePage">上一页</button>
+                <div class="pageWrap" style="width:300px">
+                  <ul id="pageSelect" style="transition: all 600ms; transform: translateX(0px);">
+                    <li class="">1</li>
+                    <li>2</li>
+                    <li class="sel-page">3</li>
+                    <li>4</li>
+                    <li>5</li>
+                  </ul>
+                </div>
+                <button class="turnPage" id="nextPage">下一页</button>
+                <button type="button" id="lastPage" class="last-page">尾页</button>
+                <input type="text" placeholder="1" class="jump-text" id="jumpText">
+                <button type="button" class="jump-button" id="jumpBtn">跳转</button>
+                <p class="total-pages">共&nbsp;30&nbsp;页</p><p class="total-count">合计300条数据</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footerd">
+      <span>版权所有版权所有版权所有版权所有版权所有版权所有版权所有版权所有</span><br/>
+      <span>市场有风险，投资需谨慎</span>
+    </div>
 
 
 
-                          <script type="text/javascript" src="./js/jquery.min.js"> </script>
-                          <script type="text/javascript" src="./js/bootstrap.min.js"></script>
-                          <script src="./js/validator/validator.js"></script>
-                          <script src="./build/js/custom.min.js"></script>
-                          <script type="text/javascript" src="./js/jDialog.js"></script>
-                          <script src="./js/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>
-                          <script src="./js/bootstrap-fileinput.js"></script>
-                          <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-                          <script type="text/javascript" src="./js/moment.js"></script>
-                          <script type="text/javascript" src="./js/daterangepicker.js"></script>
+    <script type="text/javascript" src="./js/jquery.min.js"> </script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script src="./js/validator/validator.js"></script>
+    <script src="./build/js/custom.min.js"></script>
+    <script type="text/javascript" src="./js/jDialog.js"></script>
+    <script src="./js/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>
+    <script src="./js/bootstrap-fileinput.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/moment.js"></script>
+    <script type="text/javascript" src="./js/daterangepicker.js"></script>
 
-                          <script type="text/javascript">
-                          $('.hover').mouseover(function(){
-                            $(this).find('img').attr('src','./images/arrow-up.png')
-                            $(this).find('ul').css('display','block')
-                            // $(this).child('a').css('color','#ff0000')
-                          });
-                          $('.hover').mouseout(function(){
-                            $(this).find('img').attr('src','./images/arrow-down.png')
-                            $(this).find('ul').css('display','none')
-                            // $(this).child('a').css('color','#4c4c4c')
-                          });
-                          </script>
-                          <script>
-                            var chart;
-                            $(document).ready(function() {
-                            //折线图示例
-                                chart = new Highcharts.Chart({
-                                    chart: {
-                                        renderTo: 'container',          //放置图表的容器
-                                        plotBackgroundColor: null,
-                                        plotBorderWidth: null,
-                                        defaultSeriesType: 'line'
-                                    },
-                                    title: {
-                                        text: '余额/收益'
-                                    },
-                                    subtitle: {
-                                        text: ''
-                                    },
-                                    xAxis: {//X轴数据
-                                        categories: ['12/01', '12/05', '12/10', '12/15', '12/20', '12/25', '12/30', '01/04', '01/09', '01/14', '01/19', '01/24','01/29','02/03'],
-                                        labels: {
-                                            rotation: -45, //字体倾斜
-                                            align: 'right',
-                                            style: { font: 'normal 13px 宋体' }
-                                        }
-                                    },
-                                    yAxis: {//Y轴显示文字
-                                        title: {
-                                            text: ''
-                                        }
-                                    },
-                                    tooltip: {
-                                        enabled: true,
-                                        formatter: function() {
-                                            return '<b>' + this.x + '</b><br/>' + this.series.name + ': ' + Highcharts.numberFormat(this.y, 1);
-                                        }
-                                    },
-                                    plotOptions: {
-                                        line: {
-                                            dataLabels: {
-                                                enabled: true
-                                            },
-                                            enableMouseTracking: true//是否显示title
-                                        }
-                                    },
-                                    series: [{
-                                        name: '余额',
-                                        data: [0,1000 , 4000,5000 ,5000,6800,7000,6500, 6600,7600,5800,4700,6880 ]
-                                    }, {
-                                        name: '收益',
-                                        data: [2200, 800, 800, 3000, 4000, 5000, 4800, 5000, 6000, 7200, 6000, 5000,5800,-2000]
-                                    }]
-                                });
-                                //柱状图图示例
-                                chart = new Highcharts.Chart({
-                                                chart: {
-                                                    renderTo: 'container2',          //放置图表的容器
-                                                    plotBackgroundColor: null,
-                                                    plotBorderWidth: null,
-                                                    defaultSeriesType: 'column'   //图表类型line, spline, area, areaspline, column, bar, pie , scatter
-                                                },
-                                                title: {
-                                                    text: '出入金'
-                                                },
-                                                xAxis: {//X轴数据
-                                                    categories: ['一月份', '二月份', '三月份', '四月份', '五月份', '六月份', '七月份', '八月份', '九月份', '十月份', '十一月份', '十二月份', '十三月份', '十四月份'],
-                                                    labels: {
-                                                        rotation: -45, //字体倾斜
-                                                        align: 'right',
-                                                        style: { font: 'normal 13px 宋体' }
-                                                    }
-                                                },
-                                                yAxis: {//Y轴显示文字
-                                                    title: {
-                                                        text: '产量/百万'
-                                                    }
-                                                },
-                                                tooltip: {
-                                                    enabled: true,
-                                                    formatter: function() {
-                                                        return '<b>' + this.x + '</b><br/>' + this.series.name + ': ' + Highcharts.numberFormat(this.y, 1) + "百万";
-                                                    }
-                                                },
-                                                plotOptions: {
-                                                    column: {
-                                                        dataLabels: {
-                                                            enabled: true
-                                                        },
-                                                        enableMouseTracking: true//是否显示title
-                                                    }
-                                                },
-                                                series: [{
-                                                    name: '杭州',
-                                                    data: [7.0, 6.9, 9.5, 14.5, 18.4, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6, 9.6, 9.6]
-                                                }, {
-                                                    name: '江西',
-                                                    data: [4.0, 2.9, 5.5, 24.5, 18.4, 11.5, 35.2, 36.5, 23.3, 38.3, 23.9, 3.6, 9.6, 9.6]
-                                                }, {
-                                                    name: '湖南',
-                                                    data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8, 9.6, 9.6]
-                                                }]
-                                              });
-                                              //柱状图图示例
-                                chart = new Highcharts.Chart({
-                                                chart: {
-                                                    renderTo: 'container3',          //放置图表的容器
-                                                    plotBackgroundColor: null,
-                                                    plotBorderWidth: null,
-                                                    defaultSeriesType: 'column'   //图表类型line, spline, area, areaspline, column, bar, pie , scatter
-                                                },
-                                                title: {
-                                                    text: '胜率'
-                                                },
-                                                xAxis: {//X轴数据
-                                                    categories: ['一月份', '二月份', '三月份', '四月份', '五月份', '六月份', '七月份', '八月份', '九月份', '十月份', '十一月份', '十二月份', '十三月份', '十四月份'],
-                                                    labels: {
-                                                        rotation: -45, //字体倾斜
-                                                        align: 'right',
-                                                        style: { font: 'normal 13px 宋体' }
-                                                    }
-                                                },
-                                                yAxis: {//Y轴显示文字
-                                                    title: {
-                                                        text: '产量/百万'
-                                                    }
-                                                },
-                                                tooltip: {
-                                                    enabled: true,
-                                                    formatter: function() {
-                                                        return '<b>' + this.x + '</b><br/>' + this.series.name + ': ' + Highcharts.numberFormat(this.y, 1) + "百万";
-                                                    }
-                                                },
-                                                plotOptions: {
-                                                    column: {
-                                                        dataLabels: {
-                                                            enabled: true
-                                                        },
-                                                        enableMouseTracking: true//是否显示title
-                                                    }
-                                                },
-                                                series: [{
-                                                    name: '杭州',
-                                                    data: [7.0, 6.9, 9.5, 14.5, 18.4, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6, 9.6, 9.6]
-                                                }, {
-                                                    name: '江西',
-                                                    data: [4.0, 2.9, 5.5, 24.5, 18.4, 11.5, 35.2, 36.5, 23.3, 38.3, 23.9, 3.6, 9.6, 9.6]
-                                                }, {
-                                                    name: '湖南',
-                                                    data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8, 9.6, 9.6]
-                                                }]
-                                              });
-                            });
-                        </script>
-                        </body>
-                        </html>
+    <script type="text/javascript">
+    $('.hover').mouseover(function(){
+      $(this).find('img').attr('src','./images/arrow-up.png')
+      $(this).find('ul').css('display','block')
+      // $(this).child('a').css('color','#ff0000')
+    });
+    $('.hover').mouseout(function(){
+      $(this).find('img').attr('src','./images/arrow-down.png')
+      $(this).find('ul').css('display','none')
+      // $(this).child('a').css('color','#4c4c4c')
+    });
+    $('#btn-cps').click(function(){
+      $(this).find('img').attr('src','./images/gender02.png')
+      $(this).find('span').css('color','#f6390d')
+      $(this).siblings('#btn-gsz').find('img').attr('src','./images/gender.png')
+      $(this).siblings('#btn-gsz').find('span').css('color','#4c4c4c')
+      $('#cps').css('display','block')
+      $('#gsz').css('display','none')
+    })
+    $('#btn-gsz').click(function(){
+      $(this).find('img').attr('src','./images/gender02.png')
+      $(this).find('span').css('color','#f6390d')
+      $(this).siblings('#btn-cps').find('img').attr('src','./images/gender.png')
+      $(this).siblings('#btn-cps').find('span').css('color','#4c4c4c')
+      $('#gsz').css('display','block')
+      $('#cps').css('display','none')
+    })
+    </script>
+
+    <script type="text/javascript">
+	    $(document).ready(function() {
+	       $('#reservationtime').daterangepicker({
+	         timePicker: true,
+	         timePickerIncrement: 30,
+	         format: 'YYYY/MM/DD h:mm:ss'
+	       }, function(start, end, label) {
+	         console.log(start.toISOString(), end.toISOString(), label);
+	       });
+	    });
+    </script>
+    <script>
+    var chart;
+    $(document).ready(function() {
+      //折线图示例
+      chart = new Highcharts.Chart({
+        chart: {
+          renderTo: 'container',          //放置图表的容器
+          plotBackgroundColor: null,
+          plotBorderWidth: null,
+          defaultSeriesType: 'line'
+        },
+        title: {
+          text: '余额/收益'
+        },
+        subtitle: {
+          text: ''
+        },
+        xAxis: {//X轴数据
+          categories: ['12/01', '12/05', '12/10', '12/15', '12/20', '12/25', '12/30', '01/04', '01/09', '01/14', '01/19', '01/24','01/29','02/03'],
+          labels: {
+            rotation: -45, //字体倾斜
+            align: 'right',
+            style: { font: 'normal 13px 宋体' }
+          }
+        },
+        yAxis: {//Y轴显示文字
+          title: {
+            text: ''
+          }
+        },
+        tooltip: {
+          enabled: true,
+          formatter: function() {
+            return '<b>' + this.x + '</b><br/>' + this.series.name + ': ' + Highcharts.numberFormat(this.y, 1);
+          }
+        },
+        plotOptions: {
+          line: {
+            dataLabels: {
+              enabled: true
+            },
+            enableMouseTracking: true//是否显示title
+          }
+        },
+        series: [{
+          name: '余额',
+          data: [0,1000 , 4000,5000 ,5000,6800,7000,6500, 6600,7600,5800,4700,6880 ]
+        }, {
+          name: '收益',
+          data: [2200, 800, 800, 3000, 4000, 5000, 4800, 5000, 6000, 7200, 6000, 5000,5800,-2000]
+        }]
+      });
+      //柱状图图示例
+      chart = new Highcharts.Chart({
+        chart: {
+          renderTo: 'container2',          //放置图表的容器
+          plotBackgroundColor: null,
+          plotBorderWidth: null,
+          defaultSeriesType: 'column'   //图表类型line, spline, area, areaspline, column, bar, pie , scatter
+        },
+        title: {
+          text: '出入金'
+        },
+        xAxis: {//X轴数据
+          categories: ['一月份', '二月份', '三月份', '四月份', '五月份', '六月份', '七月份', '八月份', '九月份', '十月份', '十一月份', '十二月份', '十三月份', '十四月份'],
+          labels: {
+            rotation: -45, //字体倾斜
+            align: 'right',
+            style: { font: 'normal 13px 宋体' }
+          }
+        },
+        yAxis: {//Y轴显示文字
+          title: {
+            text: '产量/百万'
+          }
+        },
+        tooltip: {
+          enabled: true,
+          formatter: function() {
+            return '<b>' + this.x + '</b><br/>' + this.series.name + ': ' + Highcharts.numberFormat(this.y, 1) + "百万";
+          }
+        },
+        plotOptions: {
+          column: {
+            dataLabels: {
+              enabled: true
+            },
+            enableMouseTracking: true//是否显示title
+          }
+        },
+        series: [{
+          name: '杭州',
+          data: [7.0, 6.9, 9.5, 14.5, 18.4, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6, 9.6, 9.6]
+        }, {
+          name: '江西',
+          data: [4.0, 2.9, 5.5, 24.5, 18.4, 11.5, 35.2, 36.5, 23.3, 38.3, 23.9, 3.6, 9.6, 9.6]
+        }, {
+          name: '湖南',
+          data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8, 9.6, 9.6]
+        }]
+      });
+      //柱状图图示例
+      chart = new Highcharts.Chart({
+        chart: {
+          renderTo: 'container3',          //放置图表的容器
+          plotBackgroundColor: null,
+          plotBorderWidth: null,
+          defaultSeriesType: 'column'   //图表类型line, spline, area, areaspline, column, bar, pie , scatter
+        },
+        title: {
+          text: '胜率'
+        },
+        xAxis: {//X轴数据
+          categories: ['一月份', '二月份', '三月份', '四月份', '五月份', '六月份', '七月份', '八月份', '九月份', '十月份', '十一月份', '十二月份', '十三月份', '十四月份'],
+          labels: {
+            rotation: -45, //字体倾斜
+            align: 'right',
+            style: { font: 'normal 13px 宋体' }
+          }
+        },
+        yAxis: {//Y轴显示文字
+          title: {
+            text: '产量/百万'
+          }
+        },
+        tooltip: {
+          enabled: true,
+          formatter: function() {
+            return '<b>' + this.x + '</b><br/>' + this.series.name + ': ' + Highcharts.numberFormat(this.y, 1) + "百万";
+          }
+        },
+        plotOptions: {
+          column: {
+            dataLabels: {
+              enabled: true
+            },
+            enableMouseTracking: true//是否显示title
+          }
+        },
+        series: [{
+          name: '杭州',
+          data: [7.0, 6.9, 9.5, 14.5, 18.4, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6, 9.6, 9.6]
+        }, {
+          name: '江西',
+          data: [4.0, 2.9, 5.5, 24.5, 18.4, 11.5, 35.2, 36.5, 23.3, 38.3, 23.9, 3.6, 9.6, 9.6]
+        }, {
+          name: '湖南',
+          data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8, 9.6, 9.6]
+        }]
+      });
+    });
+    </script>
+  </body>
+  </html>

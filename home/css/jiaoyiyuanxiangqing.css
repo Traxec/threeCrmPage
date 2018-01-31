@@ -9,6 +9,9 @@
   margin-right: 6px !important;
   margin-top: 10px !important; }
 
+.sel-page {
+  background: #139dfa !important; }
+
 /* 公共class结束 */
 .jyyxq {
   padding-top: 40px;
@@ -60,11 +63,12 @@
             color: #fff; }
     .jyyxq .in-jyyxq .for {
       width: 930px;
-      height: 1550px;
+      height: 1600px;
       box-shadow: 0px 3px 12px #d9d9d9;
-      padding-left: 20px; }
+      padding-left: 20px;
+      padding-right: 20px; }
       .jyyxq .in-jyyxq .for .title {
-        border: 1px solid red;
+        border: 0px;
         line-height: 35px;
         padding-left: 0px;
         margin-top: 30px;
@@ -74,7 +78,8 @@
         border-bottom: 0px;
         line-height: 35px; }
         .jyyxq .in-jyyxq .for .ddxx-title > div:nth-of-type(2), .jyyxq .in-jyyxq .for .ddxx-title > div:nth-of-type(3) {
-          margin-left: 30px; }
+          margin-left: 30px;
+          cursor: pointer; }
           .jyyxq .in-jyyxq .for .ddxx-title > div:nth-of-type(2) > img, .jyyxq .in-jyyxq .for .ddxx-title > div:nth-of-type(3) > img {
             margin-top: -5px;
             margin-right: 10px; }
@@ -112,44 +117,43 @@
             text-align: center;
             color: #4c4c4c;
             font-size: 12px; }
-            .jyyxq .in-jyyxq .for .ddxx .tab-content td button {
-              width: 60px;
-              height: 26px;
-              border: 1px solid #f6390d;
-              border-radius: 3px;
-              color: #f6390d;
-              background: #fff; }
-              .jyyxq .in-jyyxq .for .ddxx .tab-content td button:hover {
-                width: 60px;
-                height: 26px;
-                border-radius: 3px;
-                color: #fff;
-                background: #f6390d; }
-            .jyyxq .in-jyyxq .for .ddxx .tab-content td:nth-child(2) {
-              text-align: left; }
-              .jyyxq .in-jyyxq .for .ddxx .tab-content td:nth-child(2) a {
-                color: #4c4c4c; }
-            .jyyxq .in-jyyxq .for .ddxx .tab-content td:first-child img {
-              position: relative;
-              top: -20px;
-              left: -3px; }
-            .jyyxq .in-jyyxq .for .ddxx .tab-content td:nth-child(2) img {
-              margin-left: 10px;
-              margin-right: 10px; }
             .jyyxq .in-jyyxq .for .ddxx .tab-content td:hover, .jyyxq .in-jyyxq .for .ddxx .tab-content td a:hover {
               color: #f6390d; }
-            .jyyxq .in-jyyxq .for .ddxx .tab-content td:nth-child(1):hover {
-              color: #4c4c4c; }
-            .jyyxq .in-jyyxq .for .ddxx .tab-content td:nth-child(3) {
-              color: #f6390d; }
+          .jyyxq .in-jyyxq .for .ddxx .tab-content #chicang td:nth-child(1):hover {
+            color: #4c4c4c; }
+          .jyyxq .in-jyyxq .for .ddxx .tab-content #chicang td:nth-child(8), .jyyxq .in-jyyxq .for .ddxx .tab-content #chicang td:nth-child(9) {
+            color: #f6390d; }
+          .jyyxq .in-jyyxq .for .ddxx .tab-content #lishi td:nth-child(4), .jyyxq .in-jyyxq .for .ddxx .tab-content #lishi td:nth-child(6) {
+            color: #f6390d; }
       .jyyxq .in-jyyxq .for .yjtj {
         width: 100%;
         height: 100px;
-        border: 1px solid yellow; }
+        padding: 0px; }
+        .jyyxq .in-jyyxq .for .yjtj > div {
+          width: 148px;
+          height: 100px;
+          border: 1px solid #ccc;
+          margin: 0px;
+          float: left;
+          border-left: 0px; }
+          .jyyxq .in-jyyxq .for .yjtj > div:first-child {
+            border-left: 1px solid #ccc; }
+          .jyyxq .in-jyyxq .for .yjtj > div div:first-of-type {
+            width: 100% !important;
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #f6390d;
+            text-align: center; }
+          .jyyxq .in-jyyxq .for .yjtj > div div:last-of-type {
+            width: 100%;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #808080;
+            text-align: center; }
       .jyyxq .in-jyyxq .for .tu {
         width: 100%;
         height: 500px;
-        border: 1px solid red;
         margin-top: 20px; }
 
 li.active a {
