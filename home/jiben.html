@@ -36,7 +36,7 @@
     </div>
     <div class="top-right-one">
       <span>首页</span>
-      
+
       <a href="www.baidu.com">签到</a>
       <span>我的推广</span>
       <!-- <span class="top-ver">|</span> -->
@@ -185,7 +185,10 @@
             <img src="./images/x.png" alt="">
             <span>会员昵称</span>
             <span>未设置</span>
-            <a data-toggle="collapse" data-parent="#accordion" id="test"> 设置</a>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapsenick">设置</a>
+          </div>
+          <div id="collapsenick" class="panel-collapse collapse in">
+              asd
           </div>
           <div>
             <img src="./images/x.png" alt="">
@@ -716,29 +719,6 @@
 				'id': '110108',
 				'name': '海淀区'
 			}]);
-  </script>
-  <script type="text/javascript">
-      $("#test").click(function(){
-    var dialog = jDialog.alert('暂未开放！',{},{
-    showShadow: false,// 不显示对话框阴影
-    buttonAlign : 'center',
-    events : {
-      show : function(evt){
-        var dlg = evt.data.dialog;
-      },
-      close : function(evt){
-        var dlg = evt.data.dialog;
-      },
-      enterKey : function(evt){
-        alert('enter key pressed!');
-      },
-      escKey : function(evt){
-        alert('esc key pressed!');
-        evt.data.dialog.close();
-      }
-    }
-    });
-  }) ;
   </script>
   <script type="text/javascript">
       $("#test1").click(function(){
