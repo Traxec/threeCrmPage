@@ -187,7 +187,22 @@
             <img src="./images/x.png" alt="">
             <span>会员昵称</span>
             <span>未设置</span>
-            <a data-toggle="collapse" data-parent="#accordion" id="test"> 设置</a>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapsenick"> 设置</a>
+          </div>
+          <div id="collapsenick" class="panel-collapse collapse in">
+              <div>
+                  <div id="step-5" class="form-grouper step-2" style="margin-top:30px;padding-left:200px;height:130px">
+                      <form action="">
+                          <div class="form-group item">
+                              <label for="" style="margin-top:0px">新昵称</label>
+                              <input type="text" required="required" title="昵称不能为空" name="nick" value="" class="form-controlc" placeholder="" />
+                          </div>
+                          <div class="form-group item">
+                              <button type="submit" style="margin-left:135px;background:#f2343b;color:#fff;width:300px" id="test">保存</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
           </div>
           <div>
             <img src="./images/x.png" alt="">
@@ -750,7 +765,7 @@
   </script>
   <script type="text/javascript">
       $("#test").click(function(){
-    var dialog = jDialog.alert('暂未开放！',{},{
+    var dialog = jDialog.alert('该昵称已被占用！',{},{
     showShadow: false,// 不显示对话框阴影
     buttonAlign : 'center',
     events : {
