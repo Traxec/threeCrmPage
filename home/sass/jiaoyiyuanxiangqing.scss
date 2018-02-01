@@ -201,7 +201,7 @@ $font-color-red:#f6390d;
                           color:$font-color;
                       }
 
-                      &:nth-child(8),&:nth-child(9){
+                      &:nth-last-child(1),&:nth-last-child(2){
                           color:$font-color-red;
                       }
                   }
@@ -212,6 +212,12 @@ $font-color-red:#f6390d;
             td{
               &:nth-child(4),&:nth-child(6){
                 color:$font-color-red;
+              }
+              &:nth-child(1){
+                text-align: left;
+                >img{
+                  margin:0px 10px;
+                }
               }
             }
           }

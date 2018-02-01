@@ -284,7 +284,8 @@
                     <th style="width:99px;height: 40px;">交易类型</th>
                     <th style="width:99px;height: 40px;">成交量</th>
                     <th style="width:99px;height: 40px;">开仓时间</th>
-                    <th style="width:99px;height: 40px;">开仓价位</th>
+                    <th style="width:99px;height: 40px;">平仓时间</th>
+                    <th style="width:99px;height: 40px;">开/平仓价位</th>
                     <th style="width:99px;height: 40px;">止损</th>
                     <th style="width:99px;height: 40px;">止盈</th>
                     <th style="width:99px;height: 40px;">收益金额</th>
@@ -296,9 +297,10 @@
                     <td style="height: 60px;">sell</td>
                     <td style="height: 60px;">1.00</td>
                     <td style="height: 60px;">2017.10.27<br>17:59:03</td>
+                    <td style="height: 60px;">2017.10.27<br>17:59:03</td>
                     <td style="height: 60px;">
-
-                      1.20069
+                      <span style="font-size:12px;color:#999">&nbsp;1.20069</span>
+                      <br>1.20069
                     </td>
                     <td style="height: 60px;">1.20738</td>
                     <td style="height: 60px;">1.20738</td>
@@ -328,7 +330,7 @@
             </div>
           </div>
         <div class="ddxx" id="gsz" style="display:none">
-          <ul id="myTab" class="nav nav-tabs" style="margin-top: 30px;">
+          <ul id="myTab" class="nav nav-tabs" style="margin-top: 30px;margin-left:0px">
             <li class="active"><a href="#chicang" data-toggle="tab">正在跟随</a></li>
             <li><a href="#lishi" data-toggle="tab">历史跟随</a></li>
           </ul>
@@ -477,6 +479,7 @@
       $(this).siblings('#btn-gsz').find('span').css('color','#4c4c4c')
       $('#cps').css('display','block')
       $('#gsz').css('display','none')
+      $('.weller-update').css('display','block')
     })
     $('#btn-gsz').click(function(){
       $(this).find('img').attr('src','./images/gender02.png')
@@ -485,6 +488,7 @@
       $(this).siblings('#btn-cps').find('span').css('color','#4c4c4c')
       $('#gsz').css('display','block')
       $('#cps').css('display','none')
+      $('.weller-update').css('display','none')
     })
     </script>
     <script type="text/javascript">
