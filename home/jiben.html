@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="./css/app.css">
 <link href="images/logo.ico" rel="shortcut icon" type="image/x-icon"/>
   <link rel="stylesheet" type="text/css" href="./css/case.css"/>
+
+  <link rel="stylesheet" href="css/styletwo.css" type="text/css" />
 </head>
 <body>
   <div class="toper">
@@ -36,7 +38,7 @@
     </div>
     <div class="top-right-one">
       <span>首页</span>
-      
+
       <a href="www.baidu.com">签到</a>
       <span>我的推广</span>
       <!-- <span class="top-ver">|</span> -->
@@ -191,7 +193,33 @@
             <img src="./images/x.png" alt="">
             <span>会员头像</span>
             <span>未设置</span>
-            <a data-toggle="collapse" data-parent="#accordion" id="test1"> 设置</a>
+            <a data-toggle="collapse" data-parent="#accordion" href="#test5"> 设置</a>
+          </div>
+          <div id="test5" class="panel-collapse collapse in">
+            <div class="container">
+              <div class="imageBox" style="float: left;">
+                <div class="thumbBox"></div>
+                <div class="spinner" style="display: none">Loading...</div>
+              </div>
+              <div class="action">
+                <!-- <input type="file" id="file" style=" width: 200px">-->
+                <div class="new-contentarea tc"> <a href="javascript:void(0)" class="upload-img" style="float:left;">
+                  <label for="upload-file">上传头像</label>
+                  </a>
+                  <input type="file" class="" name="upload-file" id="upload-file" />
+                </div>
+                <input type="button" id="btnCrop" style="margin-left:420px;float:left;margin-top:-65px;"  class="Btnsty_peyton" value="裁切">
+                <input type="button" id="btnZoomIn"style="margin-top:-65px;" class="Btnsty_peyton" value="+"  >
+                <input type="button" id="btnZoomOut" style="margin-right:100px;margin-top:-65px;" class="Btnsty_peyton" value="-" >
+              </div>
+              <div class="cropped" style="width: 530px;height: 400px;">
+                <!-- <span style="float:left;line-height:60px;margin-left:20px;">头像预览：</span><br/>
+                <span style="font-size:14px;color:gray;margin-right:20px;margin-left:20px;">您上传的头像会自动生成下面两种尺寸展示，请注意最终效果是否清晰</span> -->
+              </div>
+              <div>
+                <input type="button" id="test2" style="margin-left:860px;float:left;margin-top:-65px;" class="Btnsty_peyton" value="确定">
+              </div>
+            </div>
           </div>
           <div style="padding:0px"></div>
           <div>
@@ -549,6 +577,9 @@
   <script type="text/javascript" src="js/cityPicker/js/cityPicker-1.0.0.js"></script>
   <script src="./js/validator/validator.js"></script>
 
+  <!-- <script type="text/javascript" src="./js/jquery-1.11.1.min.js"></script> -->
+  <script type="text/javascript" src="./js/cropbox.js"></script>
+
   <script type="text/javascript">
   // $(function () { $('#collapseOne').collapse('toggle')});
   // $(function () { $('#collapseTwo').collapse('toggle')});
@@ -741,8 +772,8 @@
   }) ;
   </script>
   <script type="text/javascript">
-      $("#test1").click(function(){
-    var dialog = jDialog.alert('暂未开放！',{},{
+      $("#test2").click(function(){
+    var dialog = jDialog.alert('头像设置成功！',{},{
     showShadow: false,// 不显示对话框阴影
     buttonAlign : 'center',
     events : {
@@ -763,5 +794,38 @@
     });
   }) ;
   </script>
+  <script type="text/javascript">
+$(window).load(function() {
+  var options =
+  {
+    thumbBox: '.thumbBox',
+    spinner: '.spinner',
+    imgSrc: 'images/avator.png'
+  }
+  var cropper = $('.imageBox').cropbox(options);
+  $('#upload-file').on('change', function(){
+    var reader = new FileReader();
+    reader.onload = function(e) {
+      options.imgSrc = e.target.result;
+      cropper = $('.imageBox').cropbox(options);
+    }
+    reader.readAsDataURL(this.files[0]);
+    this.files = [];
+  })
+  $('#btnCrop').on('click', function(){
+    var img = cropper.getDataURL();
+    $('.cropped').html('');
+    $('.cropped').append('<img src="'+img+'" align="absmiddle" style="width:40px;float:left;margin-top:175px;margin-left:200px;border-radius:40px;box-shadow:0px 0px 12px #7E7E7E;"><p style="margin-top:230px;margin-left:190px;">40px*40px</p>');
+    $('.cropped').append('<img src="'+img+'" align="absmiddle" style="width:60px;float:left;margin-top:-80px;margin-left:300px;border-radius:60px;box-shadow:0px 0px 12px #7E7E7E;"><p style="margin-top:-7px;margin-left:300px;">60px*60px</p>');
+    // $('.cropped').append('<img src="'+img+'" align="absmiddle" style="width:180px;margin-top:4px;border-radius:180px;box-shadow:0px 0px 12px #7E7E7E;"><p>180px*180px</p>');
+  })
+  $('#btnZoomIn').on('click', function(){
+    cropper.zoomIn();
+  })
+  $('#btnZoomOut').on('click', function(){
+    cropper.zoomOut();
+  })
+});
+</script>
 </body>
 </html>

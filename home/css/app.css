@@ -1028,7 +1028,7 @@ position: absolute; left: 995px; top: 7px;
 .aform>div:nth-child(2)>div:nth-child(2n){
   font-size: 14px;
   font-size: 14px;
-  padding-top: 30px;
+  /* padding-top: 30px; */
 }
 
 .form-grouper label{
