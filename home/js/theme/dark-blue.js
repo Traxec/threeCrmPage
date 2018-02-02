@@ -4,8 +4,8 @@
  */
 
 Highcharts.theme = {
-	colors: ["#DDDF0D", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", 
-		"#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+	colors: ["#eeaaee", "#eeaaee", "#eeaaee", "#eeaaee", "#eeaaee", "#eeaaee", "#eeaaee",
+		"#eeaaee", "#eeaaee", "#eeaaee", "#eeaaee"],
 	chart: {
 		backgroundColor: {
 			linearGradient: [0, 0, 250, 500],
@@ -23,157 +23,157 @@ Highcharts.theme = {
 	},
 	title: {
 		style: {
-			color: '#C0C0C0',
+			color: '#eeaaee',
 			font: 'bold 16px "Trebuchet MS", Verdana, sans-serif'
 		}
 	},
 	subtitle: {
-		style: { 
-			color: '#666666',
+		style: {
+			color: '#eeaaee',
 			font: 'bold 12px "Trebuchet MS", Verdana, sans-serif'
 		}
 	},
 	xAxis: {
-		gridLineColor: '#333333',
+		gridLineColor: '#eeaaee',
 		gridLineWidth: 1,
 		labels: {
 			style: {
-				color: '#A0A0A0'
+				color: '#eeaaee'
 			}
 		},
-		lineColor: '#A0A0A0',
-		tickColor: '#A0A0A0',
+		lineColor: '#eeaaee',
+		tickColor: '#eeaaee',
 		title: {
 			style: {
-				color: '#CCC',
+				color: '#eeaaee',
 				fontWeight: 'bold',
 				fontSize: '12px',
 				fontFamily: 'Trebuchet MS, Verdana, sans-serif'
 
-			}				
+			}
 		}
 	},
 	yAxis: {
-		gridLineColor: '#333333',
+		gridLineColor: '#eeaaee',
 		labels: {
 			style: {
-				color: '#A0A0A0'
+				color: '#eeaaee'
 			}
 		},
-		lineColor: '#A0A0A0',
+		lineColor: '#eeaaee',
 		minorTickInterval: null,
-		tickColor: '#A0A0A0',
+		tickColor: '#eeaaee',
 		tickWidth: 1,
 		title: {
 			style: {
-				color: '#CCC',
+				color: '#eeaaee',
 				fontWeight: 'bold',
 				fontSize: '12px',
 				fontFamily: 'Trebuchet MS, Verdana, sans-serif'
-			}				
+			}
 		}
 	},
 	legend: {
 		itemStyle: {
 			font: '9pt Trebuchet MS, Verdana, sans-serif',
-			color: '#A0A0A0'
+			color: '#eeaaee'
 		}
 	},
 	tooltip: {
 		backgroundColor: 'rgba(0, 0, 0, 0.75)',
 		style: {
-			color: '#F0F0F0'
+			color: '#eeaaee'
 		}
 	},
 	toolbar: {
-		itemStyle: { 
+		itemStyle: {
 			color: 'silver'
 		}
 	},
 	plotOptions: {
 		line: {
 			dataLabels: {
-				color: '#CCC'
+				color: '#eeaaee'
 			},
 			marker: {
-				lineColor: '#333'
+				lineColor: '#eeaaee'
 			}
 		},
 		spline: {
 			marker: {
-				lineColor: '#333'
+				lineColor: '#eeaaee'
 			}
 		},
 		scatter: {
 			marker: {
-				lineColor: '#333'
+				lineColor: '#eeaaee'
 			}
 		},
 		candlestick: {
 			lineColor: 'white'
 		}
-	},		
+	},
 	legend: {
 		itemStyle: {
-			color: '#CCC'
+			color: '#eeaaee'
 		},
 		itemHoverStyle: {
-			color: '#FFF'
+			color: '#eeaaee'
 		},
 		itemHiddenStyle: {
-			color: '#444'
+			color: '#eeaaee'
 		}
 	},
 	credits: {
 		style: {
-			color: '#666'
+			color: '#eeaaee'
 		}
 	},
 	labels: {
 		style: {
-			color: '#CCC'
+			color: '#eeaaee'
 		}
 	},
-	
+
 	navigation: {
 		buttonOptions: {
 			backgroundColor: {
 				linearGradient: [0, 0, 0, 20],
 				stops: [
-					[0.4, '#606060'],
-					[0.6, '#333333']
+					[0.4, '#eeaaee'],
+					[0.6, '#eeaaee']
 				]
 			},
-			borderColor: '#000000',
-			symbolStroke: '#C0C0C0',
-			hoverSymbolStroke: '#FFFFFF'
+			borderColor: '#eeaaee',
+			symbolStroke: '#eeaaee',
+			hoverSymbolStroke: '#eeaaee'
 		}
 	},
-	
+
 	exporting: {
 		buttons: {
 			exportButton: {
-				symbolFill: '#55BE3B'
+				symbolFill: '#eeaaee'
 			},
 			printButton: {
-				symbolFill: '#7797BE'
+				symbolFill: '#eeaaee'
 			}
 		}
 	},
-	
+
 	// scroll charts
 	rangeSelector: {
 		buttonTheme: {
 			fill: {
 				linearGradient: [0, 0, 0, 20],
 				stops: [
-					[0.4, '#888'],
-					[0.6, '#555']
+					[0.4, '#eeaaee'],
+					[0.6, '#eeaaee']
 				]
 			},
-			stroke: '#000000',
+			stroke: '#eeaaee',
 			style: {
-				color: '#CCC',
+				color: '#eeaaee',
 				fontWeight: 'bold'
 			},
 			states: {
@@ -181,11 +181,11 @@ Highcharts.theme = {
 					fill: {
 						linearGradient: [0, 0, 0, 20],
 						stops: [
-							[0.4, '#BBB'],
-							[0.6, '#888']
+							[0.4, '#eeaaee'],
+							[0.6, '#eeaaee']
 						]
 					},
-					stroke: '#000000',
+					stroke: '#eeaaee',
 					style: {
 						color: 'white'
 					}
@@ -194,73 +194,73 @@ Highcharts.theme = {
 					fill: {
 						linearGradient: [0, 0, 0, 20],
 						stops: [
-							[0.1, '#000'],
-							[0.3, '#333']
+							[0.1, '#eeaaee'],
+							[0.3, '#eeaaee']
 						]
 					},
-					stroke: '#000000',
+					stroke: '#eeaaee',
 					style: {
 						color: 'yellow'
 					}
 				}
-			}					
+			}
 		},
 		inputStyle: {
-			backgroundColor: '#333',
+			backgroundColor: '#eeaaee',
 			color: 'silver'
 		},
 		labelStyle: {
 			color: 'silver'
 		}
 	},
-	
+
 	navigator: {
 		handles: {
-			backgroundColor: '#666',
-			borderColor: '#AAA'
+			backgroundColor: '#eeaaee',
+			borderColor: '#eeaaee'
 		},
-		outlineColor: '#CCC',
+		outlineColor: '#eeaaee',
 		maskFill: 'rgba(16, 16, 16, 0.5)',
 		series: {
-			color: '#7798BF',
-			lineColor: '#A6C7ED'
+			color: '#eeaaee',
+			lineColor: '#eeaaee'
 		}
 	},
-	
+
 	scrollbar: {
 		barBackgroundColor: {
 				linearGradient: [0, 0, 0, 20],
 				stops: [
-					[0.4, '#888'],
-					[0.6, '#555']
+					[0.4, '#eeaaee'],
+					[0.6, '#eeaaee']
 				]
 			},
-		barBorderColor: '#CCC',
-		buttonArrowColor: '#CCC',
+		barBorderColor: '#eeaaee',
+		buttonArrowColor: '#eeaaee',
 		buttonBackgroundColor: {
 				linearGradient: [0, 0, 0, 20],
 				stops: [
-					[0.4, '#888'],
-					[0.6, '#555']
+					[0.4, '#eeaaee'],
+					[0.6, '#eeaaee']
 				]
 			},
-		buttonBorderColor: '#CCC',
-		rifleColor: '#FFF',
+		buttonBorderColor: '#eeaaee',
+		rifleColor: '#eeaaee',
 		trackBackgroundColor: {
 			linearGradient: [0, 0, 0, 10],
 			stops: [
-				[0, '#000'],
-				[1, '#333']
+				[0, '#eeaaee'],
+				[1, '#eeaaee']
 			]
 		},
-		trackBorderColor: '#666'
+		trackBorderColor: '#eeaaee'
 	},
-	
+
 	// special colors for some of the
 	legendBackgroundColor: 'rgba(0, 0, 0, 0.5)',
 	legendBackgroundColorSolid: 'rgb(35, 35, 70)',
-	dataLabelsColor: '#444',
-	textColor: '#C0C0C0',
+	dataLabelsColor: '#eeaaee',
+	textColor: '#eeaaee',
 	maskColor: 'rgba(255,255,255,0.3)'
 };
 
