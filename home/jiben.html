@@ -229,7 +229,7 @@
               </div>
               <div class="cropped" style="width: 530px;height: 400px;">
                 <span style="float:left;position: absolute;top: 10px;margin-left:10px;bottom: 20;right: 445px;font-size:14px;">头像预览:</span><br/>
-                <span style="font-size:14px;position: absolute;top: 40px;margin-left:20px;bottom: 0;right: 35x;">您上传的头像会自动生成两种尺寸展示，请注意最终效果是否清晰</span>
+                <span style="font-size:14px;position: absolute;top: 40px;margin-left:20px;bottom: 0;right: 35x;color:#999999">您上传的头像会自动生成两种尺寸展示，请注意最终效果是否清晰</span>
                 <span><img src="./images/40.png" style="width:40px;float:left;margin-top:130px;margin-left:200px;border-radius:40px;box-shadow:0px 0px 12px #7E7E7E;"></span>
                 <p style="margin-top:185px;margin-left:190px;">40px*40px</p>
                 <span><img src="./images/60.png" style="width:60px;float:left;margin-top:-75px;margin-left:300px;border-radius:60px;box-shadow:0px 0px 12px #7E7E7E;"></span>
@@ -834,7 +834,7 @@ $(window).load(function() {
   $('#btnCrop').on('click', function(){
     var img = cropper.getDataURL();
     $('.cropped').html('');
-    $('.cropped').append('<span style="line-height:0px;position: absolute;top: 40px;margin-left:15px;bottom: 20;right: 445px;font-size:14px;">头像预览:</span><br/><span style="font-size:14px;position: absolute;top: 40px;margin-left:20px;bottom: 0;right: 35x;">您上传的头像会自动生成两种尺寸展示，请注意最终效果是否清晰</span><img src="'+img+'" align="absmiddle" style="width:40px;float:left;margin-top:130px;margin-left:200px;border-radius:40px;box-shadow:0px 0px 12px #7E7E7E;"><p style="margin-top:185px;margin-left:190px;">40px*40px</p>');
+    $('.cropped').append('<span style="line-height:0px;position: absolute;top: 40px;margin-left:15px;bottom: 20;right: 445px;font-size:14px;">头像预览:</span><br/><span style="font-size:14px;position: absolute;top: 40px;margin-left:20px;bottom: 0;right: 35x;color:#999999">您上传的头像会自动生成两种尺寸展示，请注意最终效果是否清晰</span><img src="'+img+'" align="absmiddle" style="width:40px;float:left;margin-top:130px;margin-left:200px;border-radius:40px;box-shadow:0px 0px 12px #7E7E7E;"><p style="margin-top:185px;margin-left:190px;">40px*40px</p>');
     $('.cropped').append('<img src="'+img+'" align="absmiddle" style="width:60px;float:left;margin-top:-75px;margin-left:300px;border-radius:60px;box-shadow:0px 0px 12px #7E7E7E;"><p style="margin-top:-7px;margin-left:300px;">60px*60px</p>');
     // $('.cropped').append('<img src="'+img+'" align="absmiddle" style="width:180px;margin-top:4px;border-radius:180px;box-shadow:0px 0px 12px #7E7E7E;"><p>180px*180px</p>');
   })
