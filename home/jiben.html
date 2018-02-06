@@ -310,13 +310,15 @@
           </div>
 
           <div>
-            <img src="./images/check.png" alt="">
+            <img src="./images/x.png" alt="">
             <span>用户邮箱</span>
             <span>132***@163.com</span>
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapseemail"> 修改</a>
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseemail"> 设置</a>
           </div>
           <div id="collapseemail" class="panel-collapse collapse in">
-            <div id="wizard_email" class="form_wizard wizard_horizontal">
+
+            <!-- 修改 -->
+            <!-- <div id="wizard_email" class="form_wizard wizard_horizontal">
               <ul class="wizard_steps" style="margin-top:30px;">
                 <li>
                   <a href="#step-4">
@@ -360,7 +362,7 @@
                 <form action="">
                   <div class="form-group item">
                     <label for="">新邮箱</label>
-                    <input type="email" required="required" title="新邮箱不能为空" name="" value="" class="form-controlc" placeholder="">
+                    <input type="qqemail" required="required" title="新邮箱不能为空" name="" value="" class="form-controlc" placeholder="">
                   </div>
                 </form>
               </div>
@@ -369,7 +371,28 @@
                   绑定新号码成功!
                 </center>
               </div>
+            </div> -->
+
+            <!-- 设置 -->
+            <div>
+              <div class="form-grouper step-2" style="margin-top:30px;padding-left:200px;height:190px">
+                <form action="">
+                  <div class="form-group item">
+                    <label for="" style="margin-top:0px">邮箱</label>
+                    <input type="qqemail" required="required" title="qq邮箱不能为空" name="email" value="" class="form-controlc" placeholder="请输入您的qq邮箱" />
+                  </div>
+                  <div class="form-group item">
+                    <label for="">验证码</label>
+                    <input type="text" required="required" title="验证码不能为空" name="" value="" class="form-controlc" placeholder="">
+                    <button><span>获取验证码</span></button>
+                  </div>
+                  <div class="form-group item">
+                    <button type="submit" style="margin-left:135px;background:#f2343b;color:#fff;width:300px" id="test">保存</button>
+                  </div>
+                </form>
+              </div>
             </div>
+
           </div>
           <div>
             <img src="./images/check.png" alt="">
