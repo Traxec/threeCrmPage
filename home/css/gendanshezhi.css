@@ -1,21 +1,63 @@
+@charset "UTF-8";
+/* 变量开始 */
+/* 变量结束 */
 .title {
   height: 40px; }
 
 .gdsz-jiben {
-  border: 1px solid red;
-  height: auto;
-  margin: 0px;
-  padding: 0px; }
+  border: 1px solid #ccc;
+  padding: 30px 0px 30px 20px; }
+  .gdsz-jiben > div {
+    font-size: 14px;
+    color: #000; }
+  .gdsz-jiben > div:nth-of-type(-n+2) {
+    margin-bottom: 30px; }
+  .gdsz-jiben > div:first-of-type {
+    font-size: 14px; }
+    .gdsz-jiben > div:first-of-type > label {
+      color: #4c4c4c;
+      font-weight: normal;
+      margin: 0px 10px; }
+    .gdsz-jiben > div:first-of-type > span {
+      color: #4c4c4c;
+      margin-right: 40px; }
+    .gdsz-jiben > div:first-of-type > input[type='radio'] {
+      margin: 0px 5px; }
+    .gdsz-jiben > div:first-of-type > input[type='text'] {
+      color: #4c4c4c;
+      margin: 0px 10px; }
+  .gdsz-jiben > div:nth-last-of-type(-n+2) > input[type='text'] {
+    color: #4c4c4c;
+    margin: 0px 10px; }
+  .gdsz-jiben > div:nth-last-of-type(-n+2) > span:first-of-type {
+    color: #4c4c4c;
+    margin-right: 40px; }
+  .gdsz-jiben > div:nth-last-of-type(-n+2) > span:nth-of-type(2) {
+    color: #999; }
 
-.gdsz-pinzhong {
-  border: 1px solid red;
-  height: auto;
+.gdsz-pinzhong > form {
+  width: 180px;
+  border: 1px solid #ccc;
   margin: 0px;
-  padding: 0px; }
+  margin-bottom: 20px; }
+.gdsz-pinzhong td {
+  border: 1px solid #ccc;
+  width: 225px;
+  height: 60px;
+  text-align: center; }
+  .gdsz-pinzhong td > input[type='checkbox'] {
+    width: 26px;
+    height: 26px;
+    background: #fff;
+    vertical-align: middle;
+    margin-top: -5px;
+    margin-right: 15px; }
+.gdsz-pinzhong .sel-page {
+  background: #f63b0d !important; }
 
 .gdsz-shijian {
   border: 1px solid #cccccc;
-  height: 390px;
+  height: 380px;
   margin: 0px;
   padding: 0px; }
 
@@ -33,7 +75,7 @@
 
 .gdsz-shijian > button {
   float: right;
-  margin: 20px 6px 20px 0px;
+  margin: 10px 6px 10px 0px;
   font-size: 14px;
   color: #999999;
   width: 80px;
@@ -65,5 +107,10 @@
   border-radius: 4px;
   border: 1px solid #cccccc;
   background: white; }
+
+.footerd {
+  position: absolute;
+  left: 0px;
+  margin-top: 100px; }
 
 /*# sourceMappingURL=gendanshezhi.css.map */

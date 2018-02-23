@@ -10,12 +10,7 @@
   <link href="./css/bootstrap-fileinput.css" rel="stylesheet">
   <link rel="stylesheet" href="js/jDialog/jDialog.css" type="text/css">
   <link href="./css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" media="all" href="./css/daterangepicker.css" />
   <link rel="stylesheet" href="./css/style.css">
-  <script type="text/javascript" src="js/jquery-1.5.2.min.js"></script>
-  <script type="text/javascript" src="./js/highcharts.js"></script>
-  <script type="text/javascript" src="./js/theme/grid.js"></script>
-  <!-- <link rel="stylesheet" type="text/css" href="./css/demo.css"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
 
@@ -76,7 +71,7 @@
 
 
   </div>
-  <div class="inc jyyxq">
+  <div class="inc jyyxq" style="height: 1870px;">
     <div class="in-jyyxq">
       <div class="info" style="float:left">
         <div>
@@ -93,13 +88,33 @@
           <a href="" class="btn btn-default">跟随他</a>
         </div>
       </div>
-      <div class="for" style="margin:0px 0px 0px 271px;padding-top:1px;">
+      <div class="for" style="margin:0px 0px 0px 271px;padding-top:1px;height: 1720px;">
         <div class="title">
           <div class="block pull-left"></div>
           <span class="pull-left">基本设置</span>
-        </div>
+        </div> <div style="display:none"></div> <div style="display:none"></div>
+
         <div class="gdsz-jiben">
-          <div></div>
+          <div> 跟随方式:
+            <input type="radio" name="gensui">
+            <label for="">固定数量下单</label>
+            <input type="text" value="0.01">
+            <span>标准手</span>
+            <input type="radio" name="gensui">
+            <label for="">按比例下单</label>
+            <input type="text" value="0.01">
+            <span>标准手</span>
+          </div>
+          <div> 最大持仓单数:
+            <input type="text" value="100">
+            <span>单</span>
+            <span>跟随此交易员的持单量到达此数值后，将不再跟随下单</span>
+          </div>
+          <div> 持仓总手数:
+            <input type="text" value="100">
+            <span>标准手</span>
+            <span>跟随此交易员的持单手数到达此数值后，将不再跟随下单</span>
+          </div>
         </div>
 
         <div class="title">
@@ -107,7 +122,156 @@
           <span class="pull-left">品种设置</span>
         </div>
         <div class="gdsz-pinzhong">
-          <div>asd</div>
+          <form class="search d3" style="width:180px">
+            <input type="text" placeholder="品种名称/代码">
+            <button type="submit"></button>
+          </form>
+          <table>
+            <tr>
+              <td>品种</td>
+              <td><input type="checkbox">不跟随</td>
+              <td>品种</td>
+              <td><input type="checkbox">不跟随</td>
+            </tr>
+            <tr>
+              <td>
+                <span style="font-size:16px;color:#4c4c4c;font-weight:bold">EURUSD</span><br>
+                <span style="font-size:16px;color:#999">欧元兑美元</span>
+              </td>
+              <td><input type="checkbox"></td>
+              <td>
+                <span style="font-size:16px;color:#4c4c4c;font-weight:bold">EURUSD</span><br>
+                <span style="font-size:16px;color:#999">欧元兑美元</span>
+              </td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>
+                <span style="font-size:16px;color:#4c4c4c;font-weight:bold">EURUSD</span><br>
+                <span style="font-size:16px;color:#999">欧元兑美元</span>
+              </td>
+              <td><input type="checkbox"></td>
+              <td>
+                <span style="font-size:16px;color:#4c4c4c;font-weight:bold">EURUSD</span><br>
+                <span style="font-size:16px;color:#999">欧元兑美元</span>
+              </td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>
+                <span style="font-size:16px;color:#4c4c4c;font-weight:bold">EURUSD</span><br>
+                <span style="font-size:16px;color:#999">欧元兑美元</span>
+              </td>
+              <td><input type="checkbox"></td>
+              <td>
+                <span style="font-size:16px;color:#4c4c4c;font-weight:bold">EURUSD</span><br>
+                <span style="font-size:16px;color:#999">欧元兑美元</span>
+              </td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>
+                <span style="font-size:16px;color:#4c4c4c;font-weight:bold">EURUSD</span><br>
+                <span style="font-size:16px;color:#999">欧元兑美元</span>
+              </td>
+              <td><input type="checkbox"></td>
+              <td>
+                <span style="font-size:16px;color:#4c4c4c;font-weight:bold">EURUSD</span><br>
+                <span style="font-size:16px;color:#999">欧元兑美元</span>
+              </td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>
+                <span style="font-size:16px;color:#4c4c4c;font-weight:bold">EURUSD</span><br>
+                <span style="font-size:16px;color:#999">欧元兑美元</span>
+              </td>
+              <td><input type="checkbox"></td>
+              <td>
+                <span style="font-size:16px;color:#4c4c4c;font-weight:bold">EURUSD</span><br>
+                <span style="font-size:16px;color:#999">欧元兑美元</span>
+              </td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>
+                <span style="font-size:16px;color:#4c4c4c;font-weight:bold">EURUSD</span><br>
+                <span style="font-size:16px;color:#999">欧元兑美元</span>
+              </td>
+              <td><input type="checkbox"></td>
+              <td>
+                <span style="font-size:16px;color:#4c4c4c;font-weight:bold">EURUSD</span><br>
+                <span style="font-size:16px;color:#999">欧元兑美元</span>
+              </td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>
+                <span style="font-size:16px;color:#4c4c4c;font-weight:bold">EURUSD</span><br>
+                <span style="font-size:16px;color:#999">欧元兑美元</span>
+              </td>
+              <td><input type="checkbox"></td>
+              <td>
+                <span style="font-size:16px;color:#4c4c4c;font-weight:bold">EURUSD</span><br>
+                <span style="font-size:16px;color:#999">欧元兑美元</span>
+              </td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>
+                <span style="font-size:16px;color:#4c4c4c;font-weight:bold">EURUSD</span><br>
+                <span style="font-size:16px;color:#999">欧元兑美元</span>
+              </td>
+              <td><input type="checkbox"></td>
+              <td>
+                <span style="font-size:16px;color:#4c4c4c;font-weight:bold">EURUSD</span><br>
+                <span style="font-size:16px;color:#999">欧元兑美元</span>
+              </td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>
+                <span style="font-size:16px;color:#4c4c4c;font-weight:bold">EURUSD</span><br>
+                <span style="font-size:16px;color:#999">欧元兑美元</span>
+              </td>
+              <td><input type="checkbox"></td>
+              <td>
+                <span style="font-size:16px;color:#4c4c4c;font-weight:bold">EURUSD</span><br>
+                <span style="font-size:16px;color:#999">欧元兑美元</span>
+              </td>
+              <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+              <td>
+                <span style="font-size:16px;color:#4c4c4c;font-weight:bold">EURUSD</span><br>
+                <span style="font-size:16px;color:#999">欧元兑美元</span>
+              </td>
+              <td><input type="checkbox"></td>
+              <td>
+                <span style="font-size:16px;color:#4c4c4c;font-weight:bold">EURUSD</span><br>
+                <span style="font-size:16px;color:#999">欧元兑美元</span>
+              </td>
+              <td><input type="checkbox"></td>
+            </tr>
+          </table>
+          <div class="box" id="box">
+            <button type="button" id="firstPage" class="turnPage first-page">首页</button>
+            <button class="turnPage" id="prePage">上一页</button>
+            <div class="pageWrap" style="width:300px">
+              <ul id="pageSelect" style="transition: all 600ms; transform: translateX(0px);">
+                <li class="">1</li>
+                <li>2</li>
+                <li class="sel-page">3</li>
+                <li>4</li>
+                <li>5</li>
+              </ul>
+            </div>
+            <button class="turnPage" id="nextPage">下一页</button>
+            <button type="button" id="lastPage" class="last-page">尾页</button>
+            <input type="text" placeholder="1" class="jump-text" id="jumpText">
+            <button type="button" class="jump-button" id="jumpBtn">跳转</button>
+            <p class="total-pages">共&nbsp;30&nbsp;页</p><p class="total-count">合计300条数据</p>
+          </div>
         </div>
 
         <div class="title">
