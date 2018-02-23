@@ -129,9 +129,9 @@
           <table>
             <tr>
               <td>品种</td>
-              <td><input type="checkbox">不跟随</td>
+              <td><input type="checkbox" id="bugen">不跟随</td>
               <td>品种</td>
-              <td><input type="checkbox">不跟随</td>
+              <td><input type="checkbox" id="gen">不跟随</td>
             </tr>
             <tr>
               <td>
@@ -303,7 +303,7 @@
               <td>周六</td><td><input type="checkbox" style="width: 18px;height: 18px;"></td><td><input type="checkbox" style="width: 18px;height: 18px;"></td><td><input type="checkbox" style="width: 18px;height: 18px;"></td><td><input type="checkbox" style="width: 18px;height: 18px;"></td><td><input type="checkbox" style="width: 18px;height: 18px;"></td><td><input type="checkbox" style="width: 18px;height: 18px;"></td><td><input type="checkbox" style="width: 18px;height: 18px;"></td><td><input type="checkbox" style="width: 18px;height: 18px;"></td><td><input type="checkbox" style="width: 18px;height: 18px;"></td><td><input type="checkbox" style="width: 18px;height: 18px;"></td><td><input type="checkbox" style="width: 18px;height: 18px;"></td><td><input type="checkbox" style="width: 18px;height: 18px;"></td><td><input type="checkbox" style="width: 18px;height: 18px;"></td><td><input type="checkbox" style="width: 18px;height: 18px;"></td><td><input type="checkbox" style="width: 18px;height: 18px;"></td><td><input type="checkbox" style="width: 18px;height: 18px;"></td><td><input type="checkbox" style="width: 18px;height: 18px;"></td><td><input type="checkbox" style="width: 18px;height: 18px;"></td><td><input type="checkbox" style="width: 18px;height: 18px;"></td><td><input type="checkbox" style="width: 18px;height: 18px;"></td><td><input type="checkbox" style="width: 18px;height: 18px;"></td><td><input type="checkbox" style="width: 18px;height: 18px;"></td><td><input type="checkbox" style="width: 18px;height: 18px;"></td><td><input type="checkbox" style="width: 18px;height: 18px;"></td>
             </tr>
           </table>
-          <button>全选</button>
+          <button class="check" id="all">全选</button>
         </div>
         <div class="gdsz-shijian-bottom">
           <button>保存</button>
@@ -336,6 +336,31 @@
       $(this).find('img').attr('src','./images/arrow-down.png')
       $(this).find('ul').css('display','none')
     });
+    </script>
+    <script>
+      $('#bugen').click(function(){
+        if($(this).is(':checked')){
+          $(this).parent().parent().parent().find('tr').find('td:eq(1)').find('input').prop('checked',true)
+        }else{
+          $(this).parent().parent().parent().find('tr').find('td:eq(1)').find('input').prop('checked',false)
+        }
+      })
+      $('#gen').click(function(){
+        if($(this).is(':checked')){
+          $(this).parent().parent().parent().find('tr').find('td:eq(3)').find('input').prop('checked',true)
+        }else{
+          $(this).parent().parent().parent().find('tr').find('td:eq(3)').find('input').prop('checked',false)
+        }
+      })
+      $('#all').click(function(){
+        if($(this).hasClass('check')){
+          $(this).parent().find('input').prop('checked',true)
+          $(this).removeClass('check')
+        }else{
+          $(this).parent().find('input').prop('checked',false)
+          $(this).addClass('check')
+        }
+      })
     </script>
   </body>
   </html>
