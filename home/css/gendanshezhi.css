@@ -7,6 +7,10 @@
 .gdsz-jiben {
   border: 1px solid #ccc;
   padding: 30px 0px 30px 20px; }
+  .gdsz-jiben input[type='text'] {
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    color: #999; }
   .gdsz-jiben > div {
     font-size: 14px;
     color: #000; }
@@ -17,7 +21,7 @@
     .gdsz-jiben > div:first-of-type > label {
       color: #4c4c4c;
       font-weight: normal;
-      margin: 0px 10px; }
+      margin: 0px 0px; }
     .gdsz-jiben > div:first-of-type > span {
       color: #4c4c4c;
       margin-right: 40px; }
@@ -25,7 +29,8 @@
       margin: 0px 5px; }
     .gdsz-jiben > div:first-of-type > input[type='text'] {
       color: #4c4c4c;
-      margin: 0px 10px; }
+      margin: 0px 10px;
+      border: 1px solid #ccc; }
   .gdsz-jiben > div:nth-last-of-type(-n+2) > input[type='text'] {
     color: #4c4c4c;
     margin: 0px 10px; }
@@ -46,6 +51,7 @@
   height: 60px;
   text-align: center; }
   .gdsz-pinzhong td > input[type='checkbox'] {
+    display: inline-block;
     width: 26px;
     height: 26px;
     background: #fff;
@@ -96,6 +102,7 @@
   height: 35px;
   border-radius: 4px;
   border: 1px solid #cccccc;
+  outline-color: #f63b0d;
   background: #f63b0d;
   margin-right: 5px; }
 
@@ -104,6 +111,7 @@
   color: #f63b0d;
   width: 100px;
   height: 35px;
+  outline-color: #f63b0d;
   border-radius: 4px;
   border: 1px solid #cccccc;
   background: white; }
