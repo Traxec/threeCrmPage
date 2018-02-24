@@ -2953,6 +2953,125 @@ li.active a {
 
 
 
-/*时间设置*/
+/*跟单设置*/
+.title {
+  height: 40px; }
 
-/*时间设置结束*/
+.gdsz-jiben {
+  border: 1px solid #ccc;
+  padding: 30px 0px 30px 20px; }
+  .gdsz-jiben input[type='text'] {
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    color: #999; }
+  .gdsz-jiben > div {
+    font-size: 14px;
+    color: #000; }
+  .gdsz-jiben > div:nth-of-type(-n+2) {
+    margin-bottom: 30px; }
+  .gdsz-jiben > div:first-of-type {
+    font-size: 14px; }
+    .gdsz-jiben > div:first-of-type > label {
+      color: #4c4c4c;
+      font-weight: normal;
+      margin: 0px 0px; }
+    .gdsz-jiben > div:first-of-type > span {
+      color: #4c4c4c;
+      margin-right: 40px; }
+    .gdsz-jiben > div:first-of-type > input[type='radio'] {
+      margin: 0px 5px; }
+    .gdsz-jiben > div:first-of-type > input[type='text'] {
+      color: #4c4c4c;
+      margin: 0px 10px;
+      border: 1px solid #ccc; }
+  .gdsz-jiben > div:nth-last-of-type(-n+2) > input[type='text'] {
+    color: #4c4c4c;
+    margin: 0px 10px; }
+  .gdsz-jiben > div:nth-last-of-type(-n+2) > span:first-of-type {
+    color: #4c4c4c;
+    margin-right: 40px; }
+  .gdsz-jiben > div:nth-last-of-type(-n+2) > span:nth-of-type(2) {
+    color: #999; }
+
+.gdsz-pinzhong > form {
+  width: 180px;
+  border: 1px solid #ccc;
+  margin: 0px;
+  margin-bottom: 20px; }
+.gdsz-pinzhong td {
+  border: 1px solid #ccc;
+  width: 225px;
+  height: 60px;
+  text-align: center; }
+  .gdsz-pinzhong td > input[type='checkbox'] {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background: #fff;
+    vertical-align: middle;
+    margin-top: -5px;
+    margin-right: 15px; }
+.gdsz-pinzhong .sel-page {
+  background: #f63b0d !important; }
+
+.gdsz-shijian {
+  border: 1px solid #cccccc;
+  height: 380px;
+  margin: 0px;
+  padding: 0px; }
+
+.gdsz-shijian > div:nth-child(1) {
+  text-align: center;
+  font-size: 16px;
+  color: #999999;
+  margin-top: 30px;
+  margin-bottom: 20px; }
+
+.gdsz-shijian > table > tbody > tr > td {
+  text-align: center;
+  width: 35px;
+  height: 35px; }
+
+.gdsz-shijian > button {
+  float: right;
+  margin: 10px 6px 10px 0px;
+  font-size: 14px;
+  color: #999999;
+  width: 80px;
+  height: 30px;
+  border-radius: 4px;
+  border: 1px solid #cccccc;
+  background: white; }
+
+.gdsz-shijian-bottom {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
+.gdsz-shijian-bottom > button:nth-child(1) {
+  font-size: 16px;
+  color: white;
+  width: 100px;
+  height: 35px;
+  border-radius: 4px;
+  border: 1px solid #cccccc;
+  outline-color: #f63b0d;
+  background: #f63b0d;
+  margin-right: 5px; }
+
+.gdsz-shijian-bottom > button:nth-child(2) {
+  font-size: 16px;
+  color: #f63b0d;
+  width: 100px;
+  height: 35px;
+  outline-color: #f63b0d;
+  border-radius: 4px;
+  border: 1px solid #cccccc;
+  background: white; }
+
+.footerd {
+  position: absolute;
+  left: 0px;
+  margin-top: 100px; }
+
+/*跟单设置结束*/
