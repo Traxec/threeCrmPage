@@ -306,7 +306,7 @@
           <button class="check" id="all">全选</button>
         </div>
         <div class="gdsz-shijian-bottom">
-          <button>保存</button>
+          <button id="test" >保存</button>
           <button>取消</button>
         </div>
 
@@ -362,5 +362,28 @@
         }
       })
     </script>
+    <script type="text/javascript">
+      $("#test").click(function(){
+    var dialog = jDialog.alert('设置成功！',{},{
+    showShadow: false,// 不显示对话框阴影
+    buttonAlign : 'center',
+    events : {
+      show : function(evt){
+        var dlg = evt.data.dialog;
+      },
+      close : function(evt){
+        var dlg = evt.data.dialog;
+      },
+      enterKey : function(evt){
+        alert('enter key pressed!');
+      },
+      escKey : function(evt){
+        alert('esc key pressed!');
+        evt.data.dialog.close();
+      }
+    }
+    });
+  }) ;
+  </script>
   </body>
   </html>
