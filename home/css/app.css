@@ -3103,11 +3103,12 @@ li.active a {
   margin-bottom: 20px;
   float: left;
 }
-.form-horizontal>input{
+.form-horizontal>textarea{
   margin-top: 40px;
   height: 90px;
   width: 380px;
   margin-bottom: 40px;
   border:1px solid #cccccc;
+  resize: none;
 }
 /* 审核专区结束 */
