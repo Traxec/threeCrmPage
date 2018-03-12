@@ -3075,3 +3075,24 @@ li.active a {
   margin-top: 100px; }
 
 /*跟单设置结束*/
+/* 审核专区 */
+.shzq-btn-red{
+  width:60px; 
+  height:26px;
+  background:#f23439;
+  font-size:14px;
+  color:#fff;
+  border-radius:3px;
+  border:1px solid #f23439;
+}
+
+.shzq-btn-default{
+  width:60px; 
+  height:26px;
+  background:#fff;
+  font-size:14px;
+  color:#f23439;
+  border-radius:3px;
+  border:1px solid #f23439;
+}
+/* 审核专区结束 */
