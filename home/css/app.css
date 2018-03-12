@@ -3095,4 +3095,19 @@ li.active a {
   border-radius:3px;
   border:1px solid #f23439;
 }
+
+
+.form-group>span{
+  height: 20px;
+  width: 400px;
+  margin-bottom: 20px;
+  float: left;
+}
+.form-horizontal>input{
+  margin-top: 40px;
+  height: 90px;
+  width: 380px;
+  margin-bottom: 40px;
+  border:1px solid #cccccc;
+}
 /* 审核专区结束 */
