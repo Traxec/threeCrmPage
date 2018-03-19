@@ -254,7 +254,8 @@
     				    <div class="mod_fr2">软件下载</div>
     				    <div class="modlist">
     				      <ul class="modpic">
-			        		<li><a href="javascript:;" class="modmore"><img src="images/pc.png" alt="PC端"><span><p>PC端</p><img src="images/app.png" alt="PC端"></span></a></li>
+    				      	
+			        		<li><a href="javascript:;" class="modmore p1"><img src="images/pc.png" class="" alt="PC端"></a></li>
 			        		<li><a href="javascript:;" class="modmore"><img src="images/Android.png" alt="Android"><span><p>Android</p><img src="images/app.png" alt="Android"></span></a></li>
 			        		<li><a href="javascript:;" class="modmore"><img src="images/ios.png" alt="IPhone"><span><p>IPhone</p><img src="images/app.png" alt="IPhone"></span></a></li>
 			              </ul>
@@ -486,6 +487,12 @@
       			$(this).find('img').attr('src','./images/arrow-right.png')
       		}
       	})
+      	
+				$(".p1").hover(function(){
+				   $(this).find('img').attr('src','./images/pc2.png');
+				},function(){
+				   $(this).find('img').attr('src','./images/pc.png');
+				});
       </script>
       <script type="text/javascript">
       $(".modmore").hover(function(){
