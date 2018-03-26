@@ -18,6 +18,15 @@
   <!-- Custom Theme Style -->
   <link href="../build/css/custom.min.css" rel="stylesheet">
   <link href="../src/bootcss/css/app.css" rel="stylesheet">
+
+  <!-- Upload -->
+  <link href="../src/upload/cropper/cropper.min.css" rel="stylesheet">
+  <link href="../src/upload/sitelogo/sitelogo.css" rel="stylesheet">
+  <!-- jQuery -->
+  <script src="../vendors/jquery/dist/jquery.min.js"></script>
+  <script src="../src/upload/cropper/cropper.min.js"></script>
+  <script src="../src/upload/sitelogo/sitelogo.js"></script>
+
 </head>
 
 <body class="nav-md">
@@ -43,61 +52,160 @@
               <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
                   <div class="x_panel">
-                    <div class="title">
+                    <div class="x_title">
                       <h2>系统设置<small>网站设置</small></h2>
+                      <ul class="nav navbar-right panel_toolbox">
+                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                        </li>
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Settings 1</a>
+                            </li>
+                            <li><a href="#">Settings 2</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li><a class="close-link"><i class="fa fa-close"></i></a>
+                        </li>
+                      </ul>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="content col-md-12" >
+                      <br />
+                      <form id="demo" data-parsley-validate class="form-horizontal form-label-left">
+                        <div class="form-group item col-md-6" >
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">网站域名:<span class="required">*</span> </label>
+                            <div class="col-md-6 col-sm-3 col-xs-12">
+                                <input type="url" title="请输入网站域名" name="" required="required" class="form-control col-md-7 col-xs-12">
+                            </div>
+                        </div>
+                        <div class="form-group item col-md-6" style="margin-left:-200px">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">邮箱:<span class="required">*</span> </label>
+                            <div class="col-md-6 col-sm-3 col-xs-12">
+                                <input type="email" title="请输入邮箱地址" name="" required="required" class="form-control col-md-7 col-xs-12">
+                            </div>
+                        </div>
+                        <div class="form-group item col-md-6" >
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">网站名称:<span class="required">*</span> </label>
+                            <div class="col-md-6 col-sm-3 col-xs-12">
+                                <input type="text" title="请输入网站名称" name="" required="required" class="form-control col-md-7 col-xs-12">
+                            </div>
+                        </div>
+                        <div class="form-group item col-md-6" style="margin-left:-200px">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">APP下载:<span class="required">*</span> </label>
+                            <div class="col-md-6 col-sm-3 col-xs-12">
+                                <input type="url" title="请输入APP下载地址" name="" required="required" class="form-control col-md-7 col-xs-12">
+                            </div>
+                        </div>
+                        <div class="form-group item col-md-6" >
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">公司名称:<span class="required">*</span> </label>
+                            <div class="col-md-6 col-sm-3 col-xs-12">
+                                <input type="text" title="请输入公司名称" name="" required="required" class="form-control col-md-7 col-xs-12">
+                            </div>
+                        </div>
+                        <div class="form-group item col-md-6" style="margin-left:-200px">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">ICP备案:<span class="required">*</span> </label>
+                            <div class="col-md-6 col-sm-3 col-xs-12">
+                                <input type="text" title="请输入ICP备案" name="" required="required" class="form-control col-md-7 col-xs-12">
+                            </div>
+                        </div>
+                        <div class="form-group item col-md-6">
+                          <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">客服电话<span class="required">*</span> </label>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                              <select id="interface" name="" class="form-control">
+                                  <option value="0">关闭</option>
+                                  <option value="1">打开</option>
+                              </select>
+                          </div>
+                        </div>
+                        <div class="form-group item col-md-6" style="height:34px"></div>
+                        <div class="form-group item hid hide col-md-6">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">客服链接:<span class="required">*</span> </label>
+                            <div class="col-md-6 col-sm-3 col-xs-12">
+                                <input type="text" name="" class="form-control col-md-7 col-xs-12">
+                            </div>
+                        </div>
+                        <div class="form-group item col-md-6" style="height:34px"></div>
+                        <div class="form-group item hid hide col-md-6">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">客服电话:<span class="required">*</span> </label>
+                            <div class="col-md-6 col-sm-3 col-xs-12">
+                                <input type="url" name="" class="form-control col-md-7 col-xs-12">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="clearfix"></div>
+                        <div class="ln_solid"></div>
+                        <div class="form-group">
+                          <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                            <button type="submit" class="btn btn-success">保存</button>
+                            <a class="btn btn-primary" id="logo" onclick="$('.avatar-view').click()">logo上传</a>
+                            <a class="btn btn-primary" id="ico" onclick="$('.avatar-view').click()">ico上传</a>
+                            <a class="btn btn-primary" id="app" onclick="$('.avatar-view').click()">APP二维码</a>
+                          </div>
+                        </div>
+                      </form>
                     </div>
                   </div>
-                  <div class="inemailone item">
-                  	<form action="">
-                  		<label class="control-label" style="width: 60px;float: left;">网站域名<span class="required">*</span> </label>
-                        <input type="url" title="请输入网站域名" name="" required="required">
-                  		<div class="form-group item">
-                          
-                          <div class="switch">
-                          	<span>客服电话：</span>
-                          	<select id="interface" name="" class="form-control">
-                                  <option value="0">关闭</option>
-                                  <option value="1">开启</option>
-                            </select>
-                          </div>
-                          
-                        </div>
-                      	<div class="form-group item hid hide">
-                            <label class="control-label" style="width: 60px;float: left;">客服电话<span class="required">*</span> </label>
-                            <div class="col-md-3 col-sm-3 col-xs-12">
-                                <input type="phone" title="请输入客服电话" name="" required="required" class="form-control col-md-7 col-xs-12">
-                            </div>
-                        </div></br></br>
-                        <div class="form-group item hid hide" style="margin-top: 10px;">
-                            <label class="control-label" style="width: 60px;float: left; " for="last-name">客服连接<span class="required">*</span> </label>
-                            <div class="col-md-3 col-sm-3 col-xs-12">
-                                <input type="text" title="请输入商户号" name="" required="required" class="form-control col-md-7 col-xs-12">
-                            </div>
-                        </div>
-                  		<div class="Submit">
-	                        <button type="submit" class="btn btn-success">提交</button>
-	                        <button class="btn btn-primary" type="reset">重置</button>
-                      </div>
-                  	</form>
-                  </div>
                 </div>
-                
-                
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- 添加-Modal -->
-    <div class="modal fade" id="add_payInterface" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    </div>
-    <!-- 删除-Modal -->
-    <div class="modal fade" id="del_payInterface" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <!-- 上传图片-Modal -->
+            <div id="crop-avatar" class="col-md-6">
+                <div class="avatar-view hide" title="Change Logo Picture">
+                </div>
+            </div>
+
+    <div class="modal fade" id="avatar-modal" aria-hidden="true" aria-labelledby="avatar-modal-label" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <form class="avatar-form" action="{{url('admin/upload-logo')}}" enctype="multipart/form-data" method="post">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal" type="button">&times;</button>
+                        <h4 class="modal-title" id="avatar-modal-label">Change Logo Picture</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="avatar-body">
+                            <div class="avatar-upload">
+                                <input class="avatar-src" name="avatar_src" type="hidden">
+                                <input class="avatar-data" name="avatar_data" type="hidden">
+                                <label for="avatarInput">图片上传</label>
+                                <input class="avatar-input" id="avatarInput" name="avatar_file" type="file"></div>
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <div class="avatar-wrapper"></div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="avatar-preview preview-lg"></div>
+                                    <div class="avatar-preview preview-md"></div>
+                                    <div class="avatar-preview preview-sm"></div>
+                                </div>
+                            </div>
+                            <div class="row avatar-btns">
+                                <div class="col-md-9">
+                                    <div class="btn-group">
+                                        <button class="btn" data-method="rotate" data-option="-90" type="button" title="Rotate -90 degrees"><i class="fa fa-undo"></i> 向左旋转</button>
+                                    </div>
+                                    <div class="btn-group">
+                                        <button class="btn" data-method="rotate" data-option="90" type="button" title="Rotate 90 degrees"><i class="fa fa-repeat"></i> 向右旋转</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <button class="btn btn-success btn-block avatar-save" type="submit"><i class="fa fa-save"></i> 保存修改</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 
-    <!-- jQuery -->
-    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+
     <!-- Bootstrap -->
     <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- bootstrap-daterangepicker -->
@@ -107,6 +215,7 @@
     <script src="../vendors/validator/validator.js"></script>
     <!-- Custom Theme Scripts -->
     <script src="../build/js/custom.min.js"></script>
+
     <script>
         $('#interface').change(function(){
             if($(this).val()==1){
@@ -116,41 +225,18 @@
             }
         })
 
-        // 添加
-        $(".add_payInterface").on("click", function() {
-            var id = $(this).attr("data-userId");
-            $.ajax({
-                type : "POST",
-                url : "./payInterface/add2.html",
-                dataType : "html",
-                data : {
-                    id : id
-                },
-                async : false,
-                success : function(data) {
-                    $("#add_payInterface").html(data);
-                }
-            })
-        });
-        // 删除
-        $(".del_payInterface").on("click", function() {
-            var id = $(this).attr("data-userId");
-            $.ajax({
-                type : "POST",
-                url : "./payInterface/del2.html",
-                dataType : "html",
-                data : {
-                    id : id
-                },
-                async : false,
-                success : function(data) {
-                    $("#del_payInterface").html(data);
-                }
-            })
-        });
-
-  </script>
+    $('#logo').click(function(){
+        $('#avatar-modal').find('form').attr('action','123.html')
+    })
+    $('#ico').click(function(){
+        $('#avatar-modal').find('form').attr('action','456.html')
+    })
+    $('#app').click(function(){
+        $('#avatar-modal').find('form').attr('action','789.html')
+    })
     </script>
+    
 
   </body>
   </html>
+
