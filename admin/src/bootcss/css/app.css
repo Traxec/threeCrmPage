@@ -37,3 +37,50 @@ td{
   font-size: 10px;
   margin-top: 8px;
 }
+
+.inemail{
+	margin-left:20px;
+}
+.inemail>form>input{
+	margin-left: 20px;
+}
+.inemail>form>input{
+	margin-top: 10px;
+}
+
+
+.inemail>form>span:nth-child(5){
+	margin-left: 78px;
+}
+.inemail>form>span:nth-child(8){
+	margin-left: 78px;
+}
+.inemail>form>span:nth-child(11){
+	margin-left: 65px;
+}
+
+.Submit{
+	margin-top: 40px;
+	margin-left: 150px;
+}
+.inemailone{
+	margin-left: 20px;
+}
+.inemailone>form>input{
+	margin-left: 10px;
+	/*margin-top: 10px;;*/
+}
+.switch{
+	margin-top: 10px;
+	
+}
+.switch>span{
+	float: left;
+}
+.switch>select{
+	width: 150px;
+}
+
+
+
+

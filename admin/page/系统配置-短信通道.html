@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>三代CRM | 子账户管理</title>
+
+  <!-- Bootstrap -->
+  <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../src/bootcss/css/app.css" rel="stylesheet">
+
+  <!-- Custom Theme Style -->
+  <link href="../build/css/custom.min.css" rel="stylesheet">
+  <link href="../src/bootcss/css/app.css" rel="stylesheet">
+</head>
+
+<body class="nav-md">
+  <div class="container body">
+    <div class="main_container">
+      <div class="col-md-3 left_col">
+        <div class="left_col scroll-view">
+
+          <div class="clearfix"></div>
+
+          <br />
+
+        </div>
+      </div>
+
+        <div class="right_col" role="main">
+          <div class="col-md-12">
+            <div class="page-title">
+              <div class="title_left">
+                <h3>系统设置</h3>
+              </div>
+              <div class="clearfix"></div>
+              <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                  <div class="x_panel">
+                    <div class="x_title">
+                      <h2>系统设置<small>短信通道</small></h2>
+                      <ul class="nav navbar-right panel_toolbox">
+                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                        </li>
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Settings 1</a>
+                            </li>
+                            <li><a href="#">Settings 2</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li><a class="close-link"><i class="fa fa-close"></i></a>
+                        </li>
+                      </ul>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="content col-md-6">
+                      <br />
+                      <form id="demo" data-parsley-validate class="form-horizontal form-label-left">
+
+                        <div class="form-group item">
+                          <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">通道开关<span class="required">*</span> </label>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                              <select id="interface" name="" class="form-control">
+                                  <option value="0">关闭</option>
+                                  <option value="1">打开</option>
+                              </select>
+                          </div>
+                        </div>
+                        <div class="form-group item hid hide">
+                          <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">通道选择<span class="required">*</span> </label>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input type="checkbox" name="checkInterface"><label class="control-label" for="checkInterface">短信平台1</label>
+                          </div>
+                        </div>
+                        <div class="form-group item hid hide">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">接口地址：<span class="required">*</span> </label>
+                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                <input type="url" title="请输入支付地址" name="" required="required" class="form-control col-md-7 col-xs-12">
+                            </div>
+                        </div>
+                        <div class="form-group item hid hide">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">AppID：<span class="required">*</span> </label>
+                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                <input type="text" title="请输入商户号" name="" required="required" class="form-control col-md-7 col-xs-12">
+                            </div>
+                        </div>
+                        <div class="form-group item hid hide">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">密钥：<span class="required">*</span> </label>
+                            <div class="col-md-3 col-sm-3 col-xs-12">
+                                <input type="text" title="请输入密钥" name="" required="required" class="form-control col-md-7 col-xs-12">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="ln_solid"></div>
+                        <div class="form-group">
+                          <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                            <button type="submit" class="btn btn-success">提交</button>
+                            <button class="btn btn-primary" type="reset">重置</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="#" data-toggle="modal" data-target="#add_payInterface" class="add_payInterface" style="line-height:34px;margin-left:30px;"><i class="glyphicon glyphicon-plus"></i>添加</a>&nbsp;
+                        <a href="#" data-toggle="modal" data-target="#del_payInterface" class="del_payInterface" style="line-height:34px;margin-left:30px;"><i class="glyphicon glyphicon-minus"></i>删除</a>&nbsp;
+                    </div>
+                  </div>
+                </div>
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 添加-Modal -->
+    <div class="modal fade" id="add_payInterface" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    </div>
+    <!-- 删除-Modal -->
+    <div class="modal fade" id="del_payInterface" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="../vendors/moment/min/moment.min.js"></script>
+    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!-- validator -->
+    <script src="../vendors/validator/validator.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+    <script>
+        $('#interface').change(function(){
+            if($(this).val()==1){
+                $('.hid').removeClass('hide')
+            }else{
+                $('.hid').addClass('hide')
+            }
+        })
+
+        // 添加
+        $(".add_payInterface").on("click", function() {
+            var id = $(this).attr("data-userId");
+            $.ajax({
+                type : "POST",
+                url : "./payInterface/add2.html",
+                dataType : "html",
+                data : {
+                    id : id
+                },
+                async : false,
+                success : function(data) {
+                    $("#add_payInterface").html(data);
+                }
+            })
+        });
+        // 删除
+        $(".del_payInterface").on("click", function() {
+            var id = $(this).attr("data-userId");
+            $.ajax({
+                type : "POST",
+                url : "./payInterface/del2.html",
+                dataType : "html",
+                data : {
+                    id : id
+                },
+                async : false,
+                success : function(data) {
+                    $("#del_payInterface").html(data);
+                }
+            })
+        });
+
+  </script>
+    </script>
+
+  </body>
+  </html>

@@ -1,0 +1,65 @@
+ <!-- 审核 -->
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <form class="form-horizontal">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">删除</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group item">
+          <label for="" class="col-md-3 col-sm-2 control-label">短信平台1</label>
+          <div class="col-sm-6">
+            <input type="checkbox" name="xx" style="margin-top:10px">
+          </div>
+        </div>
+        <div class="form-group item">
+          <label for="" class="col-md-3 col-sm-2 control-label">短信平台2</label>
+          <div class="col-sm-6">
+            <input type="checkbox" name="xx" style="margin-top:10px">
+          </div>
+        </div>
+        <div class="form-group item">
+          <label for="" class="col-md-3 col-sm-2 control-label">短信平台3</label>
+          <div class="col-sm-6">
+            <input type="checkbox" name="xx" style="margin-top:10px">
+          </div>
+        </div>
+      </div>
+      <p style="margin-left:30px">"勾选以上项目名称并删除"</p>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        <button type="submit" class="btn btn-primary" id="save">保存</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+  <!-- jQuery -->
+  <script src="../vendors/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- Custom Theme Scripts -->
+  <script src="../build/js/custom.min.js"></script>
+  <!-- validator -->
+  <script src="../vendors/validator/validator.js"></script>
+  <link rel="stylesheet" href="../src/js/jDialog/jDialog.css" type="text/css">
+  <script type="text/javascript" src="../src/js/jDialog/jquery.drag.js"></script>
+  <script type="text/javascript" src="../src/js/jDialog/jquery.mask.js"></script>
+  <script type="text/javascript" src="../src/js/jDialog/jquery.dialog.js"></script>
+  <script>
+      	$("#save").click(function(){
+            var a = $(this).parent().parent().find('input[type=checkbox]:checked').parent().parent().text();
+		var dialog = jDialog.confirm('确定删除'+a+'?',{
+			handler : function(button,dialog) {
+				alert('你点击了确定！');
+				dialog.close();
+			}
+		},{
+			handler : function(button,dialog) {
+				alert('你点击了取消！');
+				dialog.close();
+			}
+		});
+	});
+  </script>
