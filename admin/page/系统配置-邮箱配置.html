@@ -1,138 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <!-- Meta, title, CSS, favicons, etc. -->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- Meta, title, CSS, favicons, etc. -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>三代CRM | 子账户管理</title>
+        <title>三代CRM | 子账户管理</title>
 
-  <!-- Bootstrap -->
-  <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="../src/bootcss/css/app.css" rel="stylesheet">
+        <!-- Bootstrap -->
+        <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="../src/bootcss/css/app.css" rel="stylesheet">
 
-  <!-- Custom Theme Style -->
-  <link href="../build/css/custom.min.css" rel="stylesheet">
-  <link href="../src/bootcss/css/app.css" rel="stylesheet">
+        <!-- Custom Theme Style -->
+        <link href="../build/css/custom.min.css" rel="stylesheet">
+        <link href="../src/bootcss/css/app.css" rel="stylesheet">
 
-</head>
+    </head>
 
-<body class="nav-md">
-  <div class="container body">
-    <div class="main_container">
-      <div class="col-md-3 left_col">
-        <div class="left_col scroll-view">
+    <body class="nav-md">
+        <div class="container body">
+            <div class="main_container">
+                <div class="col-md-3 left_col">
+                    <div class="left_col scroll-view">
 
-          <div class="clearfix"></div>
-
-          <br />
-
-        </div>
-      </div>
-
-        <div class="right_col" role="main" style="height:1100px;">
-          <div class="col-md-12">
-            <div class="page-title">
-              <div class="title_left">
-                <h3>系统设置</h3>
-              </div>
-              <div class="clearfix"></div>
-              <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                  <div class="x_panel">
-                    <div class="x_title">
-                      <h2>期货配置<small>期货配置</small></h2>
-                      <ul class="nav navbar-right panel_toolbox">
-                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                        </li>
-                        <li class="dropdown">
-                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                          <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Settings 1</a>
-                            </li>
-                            <li><a href="#">Settings 2</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li><a class="close-link"><i class="fa fa-close"></i></a>
-                        </li>
-                      </ul>
-                      <div class="clearfix"></div>
-                    </div>
-                    <div class="content col-md-12" >
-                      <br />
-                      <form id="demo" data-parsley-validate class="form-horizontal form-label-left">
-                        <div class="form-group item col-md-7">
-                            <label class="control-label col-md-2 col-sm-3 col-xs-12" for="first-name" style="padding-left:0px"><span style="float:left">邮件设置:</span><span class="required">SMTP:</span> </label>
-                          <div class="col-md-6 col-sm-6 col-xs-12">
-                              <select id="interface_wh" name="" class="form-control">
-                                  <option value="0">关闭</option>
-                                  <option value="1">打开</option>
-                              </select>
-                          </div>
-                        </div>
-                        <div class="form-group item col-md-7">
-                          <label class="control-label col-md-2 col-sm-3 col-xs-12" for="first-name" style="padding-left:0px">邮箱:<span class="required"></span> </label>
-                          <div class="col-md-6 col-sm-6 col-xs-12">
-                              <select id="interface_wh" name="" class="form-control">
-                                  <option value="0">关闭</option>
-                                  <option value="1">打开</option>
-                              </select>
-                          </div>
-                        </div>
-                        <div class="form-group item col-md-7">
-                          <label class="control-label col-md-2 col-sm-3 col-xs-12" for="first-name" style="padding-left:0px">密码:<span class="required"></span> </label>
-                          <div class="col-md-6 col-sm-6 col-xs-12">
-                              <select id="interface_wh" name="" class="form-control">
-                                  <option value="0">关闭</option>
-                                  <option value="1">打开</option>
-                              </select>
-                          </div>
-                        </div>
-                        <div class="form-group item col-md-7">
-                          <label class="control-label col-md-2 col-sm-3 col-xs-12" for="first-name" style="padding-left:0px">端口号:<span class="required"></span> </label>
-                          <div class="col-md-6 col-sm-6 col-xs-12">
-                              <select id="interface_wh" name="" class="form-control">
-                                  <option value="0">关闭</option>
-                                  <option value="1">打开</option>
-                              </select>
-                          </div>
-                        </div>
                         <div class="clearfix"></div>
-                        <div class="ln_solid"></div>
-                        <div class="form-group">
-                          <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-                            <button type="submit" class="btn btn-success">保存</button>
-                            <button type="submit" class="btn btn-success">MT4 软件配置</button>
-                          </div>
-                        </div>
-                      </form>
+
+                        <br />
+
                     </div>
-                  </div>
                 </div>
-              </div>
+
+                <div class="right_col" role="main" style="height:1100px;">
+                    <div class="col-md-12">
+                        <div class="page-title">
+                            <div class="title_left">
+                                <h3>系统设置</h3>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="x_panel">
+                                        <div class="x_title">
+                                            <h2>邮箱配置<small>邮箱配置</small></h2>
+                                            <ul class="nav navbar-right panel_toolbox">
+                                                <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                                </li>
+                                                <li class="dropdown">
+                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                                    <ul class="dropdown-menu" role="menu">
+                                                        <li><a href="#">Settings 1</a>
+                                                        </li>
+                                                        <li><a href="#">Settings 2</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li><a class="close-link"><i class="fa fa-close"></i></a>
+                                                </li>
+                                            </ul>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="content col-md-12" >
+                                            <br />
+                                            <form id="demo" data-parsley-validate class="form-horizontal form-label-left">
+                                                <div class="form-group item col-md-7">
+                                                    <label class="control-label col-md-2 col-sm-3 col-xs-12" for="first-name" style="padding-left:0px"><span style="float:left">邮件设置:</span><span class="required">SMTP:</span> </label>
+                                                    <input type="text" title="请输入正确的SMTP" required="required" class="form-control pull-left" style="width:300px">
+                                                </div>
+                                                <div class="form-group item col-md-7">
+                                                    <label class="control-label col-md-2 col-sm-3 col-xs-12" for="first-name" style="padding-left:0px">邮箱:<span class="required"></span> </label>
+                                                    <input type="email" title="请输入正确的邮箱地址" required="required" class="form-control pull-left" style="width:300px">
+                                                </div>
+                                                <div class="form-group item col-md-7">
+                                                    <label class="control-label col-md-2 col-sm-3 col-xs-12" for="first-name" style="padding-left:0px">密码:<span class="required"></span> </label>
+                                                    <input type="text" title="请输入正确的密码" required="required" class="form-control pull-left" style="width:300px">
+                                                </div>
+                                                <div class="form-group item col-md-7">
+                                                    <label class="control-label col-md-2 col-sm-3 col-xs-12" for="first-name" style="padding-left:0px">端口号:<span class="required"></span> </label>
+                                                    <input type="text" title="请输入正确的端口号" required="required" class="form-control pull-left" style="width:300px">
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                <div class="ln_solid"></div>
+                                                <div class="form-group">
+                                                    <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                                                        <button type="submit" class="btn btn-success">保存</button>
+                                                        <button type="submit" class="btn btn-success">MT4 软件配置</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
 
-    <!-- jQuery -->
-    <script src="../vendors/jquery/dist/jquery.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- bootstrap-daterangepicker -->
-    <script src="../vendors/moment/min/moment.min.js"></script>
-    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
-    <!-- validator -->
-    <script src="../vendors/validator/validator.js"></script>
-    <!-- Custom Theme Scripts -->
-    <script src="../build/js/custom.min.js"></script>
+        <!-- jQuery -->
+        <script src="../vendors/jquery/dist/jquery.min.js"></script>
+        <!-- Bootstrap -->
+        <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- bootstrap-daterangepicker -->
+        <script src="../vendors/moment/min/moment.min.js"></script>
+        <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+        <!-- validator -->
+        <script src="../vendors/validator/validator.js"></script>
+        <!-- Custom Theme Scripts -->
+        <script src="../build/js/custom.min.js"></script>
 
-  </body>
-  </html>
+    </body>
+</html>
 
